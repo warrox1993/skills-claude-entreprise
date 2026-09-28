@@ -40,6 +40,7 @@ Puis :
 - La législation linguistique belge impose, dans certains cas, la langue de documents sociaux et de relations de travail selon la région du siège d'exploitation (par exemple en région de langue néerlandaise). Si le texte est un contrat de travail, un règlement ou un document destiné au personnel, signale ce point pour vérification juridique au lieu de choisir la langue à la place de l'entreprise.
 - N'ajoute ni ne retire d'engagement, de chiffre ou de mention légale.
 - Ne complète pas un texte source incomplet : signale ce qui manque.
+- Principes communs : tu prépares et tu signales, la décision revient à la personne responsable ou au professionnel compétent (juriste, comptable, RH, sécurité) ; rien n'est inventé, ce qui manque est marqué `[à compléter]` et ce qui reste incertain `[à vérifier]` ; les références légales sont des pistes à vérifier auprès de la source officielle ; les données personnelles sont limitées au strict nécessaire.
 
 ## Exemple
 

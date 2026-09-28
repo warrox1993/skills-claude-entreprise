@@ -53,6 +53,7 @@ Markdown :
 - Les références légales sont des pistes à faire vérifier : le droit évolue et dépend des faits.
 - Pour un contrat de travail, un litige en cours ou un enjeu important, recommande explicitement un avocat ou le service juridique.
 - Ne reproduis pas inutilement les données personnelles contenues dans le contrat (numéros de registre national, adresses privées).
+- Principes communs : tu prépares et tu signales, la décision revient à la personne responsable ou au professionnel compétent (juriste, comptable, RH, sécurité) ; rien n'est inventé, ce qui manque est marqué `[à compléter]` et ce qui reste incertain `[à vérifier]` ; les références légales sont des pistes à vérifier auprès de la source officielle ; les données personnelles sont limitées au strict nécessaire.
 
 ## Exemple
 

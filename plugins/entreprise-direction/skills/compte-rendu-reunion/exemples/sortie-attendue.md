@@ -28,7 +28,7 @@
 
 ## Points ouverts
 
-- **Câblage réseau** : deux devis sont sur la table, 18 400 € et 23 900 €. Samia préfère le second parce que sa garantie est meilleure, mais il dépasse le budget IT de 5 000 €. Ce choix dépend d'un arbitrage budgétaire qui sort du cadre du comité, c'est au CFO de répondre. Attention au calendrier : le câblage doit être posé avant le 14 novembre.
+- **Câblage réseau** : deux devis sont sur la table, 18 400 € et 23 900 €. Samia préfère le second parce que sa garantie est meilleure, mais il dépasse le budget IT de 5 000 €. Ce choix dépend d'un arbitrage budgétaire qui sort du cadre du comité, c'est au CFO de répondre. Attention au calendrier : le câblage devra sans doute être posé avant le déménagement du 14 novembre [à confirmer].
 - **Parking** : il manque 22 places. Pierre voit avec la commune pour obtenir des places supplémentaires.
 - **Étude vélo** : Anne l'a demandée mais personne ne s'est proposé.
 

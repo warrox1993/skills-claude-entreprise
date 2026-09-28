@@ -80,7 +80,7 @@ Une fois installé, un skill se déclenche seul quand votre demande correspond �
 
 ### Claude.ai et Cowork
 
-1. Téléchargez le dépôt, puis construisez les archives : `python3 scripts/empaqueter.py` crée un fichier `.zip` par skill dans `dist/`. Chaque archive contient le dossier du skill à sa racine, comme le demande Claude.ai.
+1. Téléchargez l'archive du skill voulu depuis la page Releases du dépôt : https://github.com/warrox1993/skills-claude-entreprise/releases/latest (un fichier `.zip` par skill, par exemple `offre-emploi-inclusive.zip`). Chaque archive contient le dossier du skill à sa racine, comme le demande Claude.ai. Vous pouvez aussi les reconstruire vous-même avec `python3 scripts/empaqueter.py`, qui les crée dans `dist/`.
 2. Vérifiez que l'option « Exécution de code et création de fichiers » est activée (Paramètres, Capacités ; pour Team et Enterprise, c'est un réglage de l'organisation).
 3. Dans Claude.ai, ouvrez Personnaliser, puis Skills, cliquez sur « + », « Créer un skill », « Importer un skill », et choisissez l'archive.
 4. Le skill est ensuite disponible dans vos conversations et dans Cowork. Les skills importés dans Claude.ai sont personnels : chaque membre d'une équipe les importe pour lui-même.
@@ -98,7 +98,7 @@ Claude déclenche `compte-rendu-reunion` et rend un compte rendu avec les décis
 
 ## Garde-fous communs
 
-Tous les skills suivent les mêmes principes, écrits noir sur blanc dans chaque `SKILL.md` :
+Tous les skills suivent les mêmes principes, écrits noir sur blanc dans la section « Garde-fous » de chaque `SKILL.md` (la validation automatique vérifie leur présence) :
 
 - Claude prépare, structure et signale ; il ne prend pas de décision juridique, RH, financière ou de sécurité à la place d'un professionnel, et le dit quand c'est nécessaire.
 - Rien n'est inventé : un chiffre, un nom, une clause ou une référence manquante apparaît comme `[à compléter]` ou `[à vérifier]`.
@@ -110,7 +110,7 @@ Ces skills ne remplacent ni un avocat, ni un expert-comptable, ni un conseiller 
 
 ## Comment les skills sont vérifiés
 
-- `scripts/valider.py` contrôle la marketplace, chaque `plugin.json` et chaque `SKILL.md` : frontmatter YAML valide, nom identique au dossier (64 caractères au plus, minuscules, chiffres et tirets, sans mot réservé), description de 1024 caractères au plus, sections obligatoires, exemples présents.
+- `scripts/valider.py` contrôle la marketplace, chaque `plugin.json` et chaque `SKILL.md` : frontmatter YAML valide, nom identique au dossier (64 caractères au plus, minuscules, chiffres et tirets, sans mot réservé), description de 1024 caractères au plus, sections obligatoires, principes communs présents dans les garde-fous, exemples présents.
 - La CI GitHub Actions (actions épinglées par SHA) lance ce script, puis `claude plugin validate --strict` sur la marketplace et sur chaque plugin, puis construit les archives Claude.ai.
 - `scripts/tester-skill.sh` teste un skill en conditions réelles : il envoie `exemples/entree.md` à Claude Code en mode non interactif, avec les huit plugins chargés, et vérifie que le bon skill se déclenche seul. Les 23 skills ont été testés ainsi avant publication : les 23 se sont déclenchés seuls, sur la seule base de leur description, et leurs réponses suivent le format annoncé.
 

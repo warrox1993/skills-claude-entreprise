@@ -1,7 +1,7 @@
 {
   "name": "entreprise-rh",
   "displayName": "Ressources humaines",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skills RH : offre d'emploi inclusive et conforme au droit belge, grille d'entretien structuré, plan d'accueil d'un nouvel arrivant.",
   "author": {
     "name": "Jean-Baptiste Dhondt",

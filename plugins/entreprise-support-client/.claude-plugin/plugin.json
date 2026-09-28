@@ -1,7 +1,7 @@
 {
   "name": "entreprise-support-client",
   "displayName": "Support client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skills support client : réponse à une réclamation, article de base de connaissances à partir d'un ticket résolu.",
   "author": {
     "name": "Jean-Baptiste Dhondt",
