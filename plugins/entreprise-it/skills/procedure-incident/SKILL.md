@@ -46,6 +46,7 @@ Markdown :
 
 ## Garde-fous
 
+- Ne présume pas l'existence d'un DPO, d'une assurance cyber, d'un contrat ou d'un aménagement des locaux : ce qui n'est pas donné devient `[à vérifier]` ou `[à adapter]`.
 - Les délais légaux sont indiqués comme repères à vérifier : leur application dépend des faits et du statut de l'organisation. Recommande une validation par le DPO ou le juriste.
 - Ne donne pas d'instructions techniques offensives. Pour un incident avancé (rançongiciel, intrusion), recommande de faire appel à un prestataire spécialisé en réponse à incident et, en Belgique, de consulter les ressources du CCB.
 - Ne mets aucun mot de passe, clé ou secret dans la procédure : indique où ils sont conservés (coffre-fort de mots de passe, enveloppe scellée).

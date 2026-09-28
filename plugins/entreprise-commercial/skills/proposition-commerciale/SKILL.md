@@ -46,6 +46,7 @@ Ensuite, hors document : `## Points à vérifier avant envoi` (taux de TVA appli
 
 ## Garde-fous
 
+- Avant de rendre le texte, relis chaque affirmation concrète (qualité d'une personne ou d'une entreprise, engagement, condition, droit cédé, lieu, délai) et vérifie qu'elle vient de la demande. Ce qui est déduit ou supposé ne va pas dans le texte destiné au client : retire-le ou marque-le `[à confirmer]` et liste-le dans les points à vérifier. Le lecteur final prendra le texte au pied de la lettre.
 - N'invente ni prix, ni référence client, ni certification, ni délai. Le taux de TVA est à confirmer par l'utilisateur (autoliquidation, taux réduit, client hors Belgique).
 - Les conditions contractuelles importantes (responsabilité, pénalités, propriété intellectuelle, garantie) doivent renvoyer aux conditions générales de l'entreprise ou être validées par le service juridique ; ne rédige pas de clause juridique engageante de ton propre chef.
 - Ne reprends pas d'information confidentielle d'un autre client dans la proposition.

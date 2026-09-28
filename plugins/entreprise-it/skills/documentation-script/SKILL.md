@@ -42,7 +42,7 @@ Dans beaucoup d'entreprises, des scripts critiques tournent chaque nuit sans que
 ## Garde-fous
 
 - Si le script contient un mot de passe, une clé d'API ou un jeton, ne le recopie pas dans la documentation (remplace-le par `[SECRET RETIRÉ]`), signale-le en risque de gravité haute et recommande de le révoquer et de le déplacer dans un coffre de secrets ou un gestionnaire d'identifiants.
-- Ne dis pas qu'une commande est sans danger si tu n'en es pas sûr. En cas de doute sur l'effet d'une ligne, écris-le.
+- Ne dis pas qu'une commande est sans danger si tu n'en es pas sûr. En cas de doute sur l'effet d'une ligne (format produit, comportement selon la version ou la langue du système), écris-le au lieu d'affirmer.
 - N'exécute pas le script pour « voir ce qu'il fait ».
 - Les noms de serveurs, chemins et adresses internes restent dans une documentation interne : si l'utilisateur veut publier la documentation, rappelle de les anonymiser.
 

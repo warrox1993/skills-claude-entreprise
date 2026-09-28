@@ -1,53 +1,63 @@
-# Fiche RDV : Transports Delvaux (Ans), demain 10h, 1h
+# Fiche RDV : Transports Delvaux (Ans), demain 10h, 1 h
 
 ## Objectif et prochaine étape visée
-**Objectif :** vérifier que le départ en retraite de mars et les pénalités de la grande distribution posent un vrai problème chiffrable, et que notre outil peut se brancher sur leur TMS.
-**Prochaine étape visée :** un atelier de cadrage de 2h **avant le 16 octobre**, avec le responsable IT et le dispatcheur qui part en retraite. On y apporte une simulation faite sur une semaine réelle de tournées, à partir de leur fichier Excel.
+**Objectif :** comprendre ce que coûtent aujourd'hui la planification sur Excel et les retards, puis montrer à Mme Delvaux et à son responsable IT qu'un projet réaliste peut aboutir avant le départ du dispatcheur en mars.
+**Prochaine étape visée :** repartir avec deux engagements datés :
+1. l'envoi d'un export de 2 à 4 semaines de tournées réelles, pour une simulation sur leurs données ;
+2. un atelier technique avec le responsable IT sur l'intégration au TMS, au plus tard mi-octobre.
 
 ## Le client en bref
-- 80 camions, environ 120 chauffeurs, logistique (su)
-- Tournées planifiées sur Excel par deux dispatcheurs. L'un part en retraite en mars 2027 (su)
-- Pénalités de retard cet été chez un gros client de la grande distribution (su). Montant et fréquence `[à vérifier]`
-- Il y a 3 semaines, Mme Delvaux a téléchargé notre livre blanc sur les coûts de carburant (su). Le carburant la préoccupe (supposé)
-- TMS belge ancien, nom inconnu (su). Interfaces possibles : API, export de fichiers ou rien du tout `[à vérifier]`
-- La décision de l'achat revient à Mme Delvaux seule, ou à la direction générale ou au conseil de famille (supposé, à clarifier)
+- Transporteur logistique à Ans, environ 120 chauffeurs et 80 camions **(su)**
+- Planification sur Excel par deux dispatcheurs, dont l'un part à la retraite en mars **(su)**
+- Pénalités de retard cet été chez un gros client de la grande distribution **(su)** ; montant et fréquence inconnus **(à demander)**
+- Mme Delvaux a téléchargé notre livre blanc sur la hausse des coûts de carburant il y a 3 semaines **(su)**. Le carburant est donc probablement une préoccupation **(supposé)**
+- TMS belge assez ancien, nom et possibilités d'échange de données inconnus **(supposé : intégration peut-être délicate)**
+- Qui décide et qui signe : inconnu **(supposé)**. Ne pas déduire quoi que ce soit du nom de famille, poser la question.
 
 ## Nos hypothèses de besoin
-1. **Ne pas perdre le savoir du dispatcheur qui part.** Sa connaissance des clients, des créneaux et des contraintes est dans sa tête et dans l'Excel. En mars, un seul dispatcheur ne suffira pas, ou devra former un remplaçant dans l'urgence.
-2. **Tenir les délais chez le client de la grande distribution.** Sans visibilité sur les créneaux ni replanification rapide, les pénalités recommenceront et le contrat peut être menacé.
-3. **Réduire les kilomètres à vide et le carburant.** Sur 80 camions, quelques pourcents de kilomètres en moins représentent un montant réel. Ce montant est à calculer avec leurs chiffres, pas avec les nôtres.
+1. **Continuité :** une bonne partie du savoir-faire de planification est dans la tête du dispatcheur qui part. Sans outil, il faudra le remplacer à l'identique, et ce profil est difficile à recruter.
+2. **Fiabilité de service :** les pénalités de la grande distribution viennent de créneaux de livraison mal tenus. Il leur faut des tournées qui respectent ces créneaux et une alerte avant le retard.
+3. **Coûts :** kilomètres à vide et carburant. C'est le sujet qui a déclenché le premier contact.
 
 ## Questions de découverte
-1. Comment se construit une journée de planification aujourd'hui, de la réception des commandes à la feuille de route du chauffeur ? Combien de temps ça prend ?
-2. Que sait faire votre dispatcheur qui part en mars, que personne d'autre ne sait faire ? Qu'est-ce qui est prévu pour son remplacement ?
-3. Les retards de cet été : d'où venaient-ils ? Mauvaise planification, imprévus mal gérés, créneaux de quai ?
-4. Que vous ont coûté ces pénalités ? Qu'est-ce qui est en jeu avec ce client si ça recommence ?
-4. *(pour l'IT)* Quel TMS utilisez-vous ? Comment en sortent les données aujourd'hui : export, base de données accessible, API ? Qui en assure la maintenance ?
-6. Quelle part de vos kilomètres est roulée à vide ? Est-ce que vous la mesurez ?
-7. Si vous changez d'outil, qui d'autre que vous deux doit donner son accord ? Avec quel budget et quel calendrier ?
-8. Pour être prêts en mars, à quelle date faudrait-il que l'outil tourne ?
+1. Comment se construit aujourd'hui le planning d'une journée, de la commande reçue au chauffeur qui part ? Combien de temps ça prend, et à qui ?
+2. Qu'est-ce que votre dispatcheur sait faire que le fichier Excel ne sait pas ? Comment comptez-vous organiser la transition d'ici mars ?
+3. Que s'est-il passé cet été chez votre client de la grande distribution ? Quel montant de pénalités ? Est-ce que ça pèse sur le renouvellement du contrat ?
+4. Qu'est-ce qui a retenu votre attention dans le livre blanc sur le carburant ? Suivez-vous vos kilomètres à vide ou votre consommation par tournée ?
+5. *(IT)* Quel TMS utilisez-vous ? Est-ce qu'il sait exporter ou importer des données (fichiers, API, base accessible) ? Qui le maintient ?
+6. *(IT)* Quelles sont vos contraintes pour un outil en ligne : hébergement, accès des dispatcheurs, données des chauffeurs ?
+7. Qui d'autre doit être convaincu pour lancer un projet comme celui-ci, et comment se prend la décision ?
+8. Si vous regardez mars, à quelle date un outil devrait-il tourner pour que la transition se passe bien ? Un budget est-il déjà prévu pour 2026-2027 ?
 
 ## Objections probables
+
 | Objection | Piste de réponse | Question de clarification |
 |---|---|---|
-| « 32 000 € la première année, c'est cher » (80 × 25 € × 12 = 24 000 € + 8 000 € d'intégration) | Comparer avec leurs propres coûts : pénalités, carburant, coût d'un dispatcheur. Ne pas avancer de retour sur investissement sans leurs chiffres | « À quoi vous comparez ce montant ? Combien ont coûté les pénalités de cet été ? » |
-| *(IT)* « Notre TMS ne s'interface avec rien » | Toutes les options sont ouvertes (API, échange de fichiers, import manuel au démarrage). On s'engage après avoir vu le TMS, pas avant | « Pouvez-vous nous montrer un export type pendant l'atelier ? » |
-| « Nos dispatcheurs connaissent le terrain mieux qu'un logiciel » | Exact. L'outil garde leurs règles et leur laisse le dernier mot. C'est justement ce qui permet de conserver le savoir de celui qui part | « Quelles règles appliquent-ils qu'un outil risque d'ignorer ? » |
+| « C'est cher, surtout les 8 000 € d'intégration » | Remettre le montant en face du coût actuel : pénalités de l'été, temps de dispatch, kilomètres à vide. Ordre de grandeur pour 80 camions : environ 2 000 €/mois, soit environ 32 000 € la première année avec l'intégration **[à confirmer avec notre grille]** | « À combien estimez-vous ce que vous ont coûté les retards de cet été ? » |
+| *(IT)* « Notre TMS est ancien, l'intégration va être un chantier » | Ne rien promettre avant d'avoir vu le système. Proposer l'atelier technique pour qualifier le mode d'échange. Un simple échange de fichiers suffit peut-être au départ **[à vérifier en interne]** | « Aujourd'hui, comment les données sortent-elles du TMS vers Excel ? » |
+| « Excel marche, on va recruter un remplaçant » | Ne pas dénigrer leur méthode, qui a fonctionné. La question, c'est le délai pour former quelqu'un à reproduire ce savoir-faire, et le risque pendant cette période | « Combien de temps a-t-il fallu à vos dispatcheurs actuels pour être autonomes ? » |
+| « Les dispatcheurs ne vont pas l'adopter » | Associer dès maintenant le dispatcheur qui reste, et celui qui part pour transmettre ses règles. La simulation sur leurs propres tournées sert aussi à ça | « Qui devrait-on impliquer côté dispatch pour la simulation ? » |
 
 ## Preuves à mobiliser
-- **Frigolux (Liège, 60 camions) : −11 % de kilomètres à vide la première année.** Le chiffre est validé et citable. C'est un transporteur régional de taille voisine. Préciser les différences (activité frigorifique, flotte plus petite) : on ne promet pas les 11 % à Delvaux.
-- Si possible, proposer d'organiser un appel avec Frigolux `[à vérifier auprès de Frigolux avant de le proposer]`.
+- **Frigolux (Liège, 60 camions) : −11 % de kilomètres à vide la première année.** Le chiffre est validé par eux et peut être cité. Parler de kilomètres à vide uniquement, sans le convertir en euros ou en carburant pour Delvaux tant qu'on n'a pas leurs chiffres.
+- Le livre blanc qu'elle a déjà lu : partir de ce qu'elle en a retenu (question 4) plutôt que le re-présenter.
+- *Avant le RDV :* vérifier si Frigolux accepterait un appel de référence, et s'il a été intégré à un TMS comparable.
 
 ## Conclusion du rendez-vous
-> « Vous avez une échéance en mars et un client de la grande distribution à rassurer. Je propose un atelier de 2h avant le 16 octobre, avec [responsable IT] et [dispatcheur partant]. Envoyez-nous d'ici là une semaine type de votre Excel et un export du TMS. On vous montrera ces mêmes tournées recalculées, avec les kilomètres et les créneaux, et on saura si l'intégration est faisable. Mardi ou jeudi, qu'est-ce qui vous arrange ? »
+> « Vous avez une échéance claire avec mars. Je vous propose deux choses : vous m'envoyez deux à quatre semaines de tournées réelles, et on vous montre ce que l'outil en aurait fait. En parallèle, on organise une heure avec [responsable IT] pour regarder le TMS ensemble. Est-ce qu'on peut fixer cet atelier maintenant, avant le [date mi-octobre] ? »
 
-Obtenir une date ferme avant de partir, pas un « on vous recontacte ».
+Fixer la date en séance. Obtenir le nom du TMS et la personne à qui envoyer la demande d'export.
 
 ## Après le rendez-vous (sous 24 h)
-- Un e-mail récapitulatif : leurs enjeux, dans leurs propres mots, et les chiffres qu'ils ont donnés
-- Date et participants de l'atelier, et liste des données à envoyer (semaine type sur Excel, export TMS, contraintes du client de la grande distribution)
-- La fiche du cas Frigolux
-- Une première estimation du budget (abonnement + intégration), en précisant que le coût d'intégration dépend du TMS
+- Mail de synthèse à Mme Delvaux et au responsable IT : leurs enjeux reformulés avec leurs mots (mars, pénalités, carburant), les engagements pris des deux côtés et les dates.
+- Format attendu de l'export de tournées (champs, période).
+- Invitation calendrier pour l'atelier technique.
+- Fiche du cas Frigolux (si elle existe) et proposition d'appel de référence si Frigolux est d'accord.
+- Pas de proposition chiffrée avant d'avoir qualifié l'intégration.
 
 ---
-**Calendrier :** nous sommes le 28 septembre et le départ est en mars. Si on compte intégration et formation, un démarrage en janvier est déjà serré. Cette urgence est réelle et vient d'eux : c'est votre meilleur argument, à utiliser sans forcer.
+
+**À vérifier avant 10h :**
+- Notre prix exact pour 80 véhicules et les éventuelles remises de volume.
+- Si le forfait de 8 000 € couvre un TMS ancien sans API.
+- Notre délai habituel de déploiement : il décide si « avant mars » est tenable, ne pas l'annoncer sans l'avoir confirmé.

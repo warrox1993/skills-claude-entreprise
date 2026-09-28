@@ -1,36 +1,39 @@
-# Procédure rançongiciel : cabinet de kinésithérapie, Mons
+# Procédure rançongiciel, Cabinet de kinésithérapie, Mons
 
-Version 1, 28/09/2026. Responsable : Dr Maes.
-**À imprimer en 3 exemplaires** : un à l'accueil, un dans le bureau du Dr Maes, un chez le Dr Maes. Si l'informatique est bloquée, seule la version papier sera disponible.
+Version 1, septembre 2026, Responsable du document : Dr Maes
+Prochaine relecture : [date à fixer, au moins une fois par an et après chaque incident]
+
+> Ce document doit exister **sur papier** : un exemplaire au secrétariat, un chez le Dr Maes et un chez [suppléant·e]. Si les ordinateurs sont bloqués, la version informatique ne servira à rien.
 
 ---
 
 ## En cas d'incident : les 15 premières minutes
 
 **Signes d'alerte :**
-- un message à l'écran demande de payer ;
-- des fichiers ne s'ouvrent plus, ou leur nom se termine par une extension inconnue ;
-- les icônes sont devenues blanches ;
-- le fond d'écran a changé ;
-- les documents du serveur (comptabilité, administratif) sont illisibles.
+- un message à l'écran qui demande de payer ;
+- des fichiers qui ne s'ouvrent plus ou dont le nom a changé (fin du nom inhabituelle, comme `.lock` ou `.crypt`) ;
+- un fichier « LISEZ-MOI » ou « README » apparu dans les dossiers ;
+- un ordinateur très lent sans raison ;
+- un fond d'écran qui a changé.
 
-**Au moindre doute, appliquez cette procédure. Personne ne vous reprochera une fausse alerte.**
+**Au moindre doute, on applique la procédure. Une fausse alerte ne coûte rien, alors que 30 minutes de retard peuvent tout coûter.**
 
-1. **N'éteignez pas l'ordinateur.** Ne le redémarrez pas, ne supprimez rien et ne cliquez pas dans le message.
-2. **Débranchez le câble réseau** de l'ordinateur touché (câble avec l'étiquette rouge). **Coupez aussi le Wi-Fi** (icône en bas à droite > Wi-Fi désactivé).
-3. **Débranchez le disque USB de sauvegarde** du serveur (étiquette « SAUVEGARDE »). Rangez-le dans le tiroir fermé de l'accueil avec un post-it « NE PAS REBRANCHER ». Ne le branchez sur aucun autre ordinateur.
-4. **Débranchez le câble réseau du serveur** (étiquette rouge) mais laissez-le allumé. Cela bloque la copie cloud de ce soir, pour qu'elle n'écrase pas la bonne sauvegarde par des fichiers chiffrés.
-5. **Photographiez l'écran** avec votre téléphone et notez l'heure.
-6. **Prévenez à voix haute** les personnes présentes : « on n'utilise plus les ordinateurs du cabinet ». N'envoyez pas d'e-mail depuis un poste du cabinet.
-7. **Appelez le Dr Maes.** S'il ne répond pas après 10 minutes, appelez son suppléant.
-8. **Appelez la ligne d'urgence de l'assurance cyber** avec le numéro de police. Elle peut en principe envoyer un spécialiste même le week-end. **N'engagez aucune autre société sans son accord**, sinon les frais risquent de ne pas être remboursés.
-9. **Commencez le journal d'incident** (modèle plus bas).
+1. **Ne pas éteindre l'ordinateur.** Ne pas le redémarrer. Laisser l'écran tel quel.
+2. **Débrancher le câble réseau** (le câble gris ou bleu à l'arrière de l'ordinateur) **et couper le Wi-Fi** (icône en bas à droite de l'écran, ou mode avion).
+3. **Photographier l'écran avec un téléphone** (le message, le nom des fichiers). Noter l'heure.
+4. **Aller au serveur** ([emplacement à compléter]) et **débrancher son câble réseau**, sans l'éteindre.
+5. **Débrancher le disque USB de sauvegarde** du serveur et le ranger dans une enveloppe, à part. **Ne le rebrancher sur aucun ordinateur.**
+6. **Faire le tour des autres ordinateurs.** Si l'un présente les mêmes signes, appliquer les étapes 1 à 3. Pour les autres, débrancher le câble réseau par précaution et ne plus s'en servir.
+7. **Téléphoner au Dr Maes** (numéro sur la fiche contacts). Sans réponse après 10 minutes, appeler [suppléant·e].
+8. **Téléphoner à la ligne d'urgence de l'assurance cyber** (numéro sur la fiche contacts). Elle est normalement joignable le week-end. Donner le numéro de la police d'assurance.
+9. **Commencer le journal d'incident** (modèle en fin de document) : noter l'heure de chaque action.
 
-**Interdit :**
-- payer ou répondre aux pirates ;
-- réinstaller ou restaurer quoi que ce soit ;
-- brancher le disque USB ailleurs ;
-- se connecter à la messagerie ou au logiciel patients depuis un ordinateur du cabinet.
+**À NE PAS FAIRE**
+- Ne pas payer, ne pas répondre aux pirates, ne pas cliquer sur leurs liens.
+- Ne pas brancher de clé USB ni le disque de sauvegarde sur un ordinateur du cabinet.
+- Ne pas se connecter au logiciel patients, à l'agenda ou à la messagerie **depuis un ordinateur du cabinet**. Si nécessaire, utiliser un téléphone ou un ordinateur personnel sain.
+- Ne rien supprimer, ne rien « nettoyer », ne lancer aucune réinstallation.
+- Ne rien dire aux patients, à la presse ou sur les réseaux sociaux avant l'accord du Dr Maes.
 
 ---
 
@@ -38,167 +41,143 @@ Version 1, 28/09/2026. Responsable : Dr Maes.
 
 | Niveau | Critères | Exemples | Délai de réaction | Qui décide |
 |---|---|---|---|---|
-| 1. Suspicion | Rien n'est bloqué, mais quelque chose est anormal | Clic sur un lien douteux, alerte antivirus | Le jour même : débrancher le poste, prévenir le Dr Maes, appeler le prestataire le jour ouvrable suivant | Secrétaire, puis Dr Maes |
-| 2. Un poste touché | Un seul PC chiffré, le serveur fonctionne | Message de rançon sur le PC de l'accueil | Immédiat : les 15 premières minutes, puis l'assureur | Dr Maes |
-| 3. Serveur ou plusieurs postes | Fichiers du serveur illisibles ou plusieurs PC touchés | Comptabilité inaccessible | Immédiat, et on arrête d'utiliser tous les ordinateurs | Dr Maes |
-| 4. Données patients en jeu | Niveau 2 ou 3, avec en plus : les pirates disent avoir copié des données, ou il y a un accès suspect à la messagerie ou au logiciel patients | « Nous publierons vos données » | Immédiat. Déclaration à l'APD à préparer dans les 72 h | Dr Maes, avec l'assureur et le DPO |
-
-En cas d'hésitation entre deux niveaux, choisissez le plus élevé.
+| 1, Suspicion | Un seul poste au comportement anormal, aucun fichier chiffré | E-mail douteux ouvert, pièce jointe cliquée | Dans l'heure : isoler le poste, prévenir le Dr Maes. Le prestataire intervient le jour ouvrable suivant | Secrétaire, puis Dr Maes |
+| 2, Poste touché | Fichiers chiffrés ou demande de rançon sur un poste, serveur apparemment intact | Message de rançon sur un seul PC | Immédiat : les 15 premières minutes au complet, assurance appelée le jour même | Dr Maes |
+| 3, Cabinet touché | Serveur ou plusieurs postes chiffrés, ou disque USB touché | Comptabilité illisible | Immédiat, week-end compris | Dr Maes, avec l'assureur |
+| 4, Données ou comptes en ligne touchés | Microsoft 365, logiciel patients ou agenda compromis, ou menace de publier des données | Les pirates disent avoir copié des données ; e-mails envoyés depuis un compte du cabinet à l'insu de son titulaire | Immédiat. Le délai de 72 h pour l'APD commence (voir Notifications) | Dr Maes, assureur, conseil juridique |
 
 ---
 
-## Rôles (à compléter)
+## Rôles
 
 | Rôle | Titulaire | Suppléant | Responsabilités |
 |---|---|---|---|
-| Premier intervenant | La secrétaire qui constate l'incident | Toute personne présente | Applique les 15 premières minutes, commence le journal, prévient le Dr Maes et l'assureur |
-| Décision et coordination | Dr Maes | ………… (kiné désigné) | Fixe la gravité, décide des notifications, des dépenses et de la communication |
-| Technique | Week-end : spécialiste de l'assureur. Semaine : ………… (prestataire) | Spécialiste de l'assureur | Analyse, confinement, nettoyage, restauration. Personne d'autre ne touche aux machines |
-| Communication | Dr Maes | ………… | Messages au personnel, aux patients, à l'éditeur et aux autorités |
-| Journal | Premier intervenant, puis une secrétaire désignée | ………… | Tient le journal papier et conserve les photos |
+| Premier intervenant | Secrétaire présente | Toute personne présente | Applique les 15 premières minutes, tient le journal, prévient le Dr Maes et l'assurance |
+| Décision | Dr Maes | [à désigner] | Déclare l'incident, décide des notifications, de la communication, de la reprise et de toute question liée à la rançon |
+| Coordination | [à désigner, par ex. une secrétaire référente] | [à désigner] | Centralise les informations, tient le journal, organise l'accueil des patients sans informatique |
+| Technique | Experts de l'assurance (si le contrat les prévoit [à vérifier]) | Prestataire habituel [nom], en semaine | Analyse, confinement, nettoyage, restauration |
+| Communication | Dr Maes | [à désigner] | Messages au personnel, aux patients et aux partenaires |
 
 ---
 
 ## Déroulé
 
-**1. Détection.** Toute personne qui voit un signe d'alerte débranche le câble réseau de son poste et prévient l'accueil.
+**1. Détection.** Tout le monde peut et doit signaler. On ne reproche jamais à quelqu'un d'avoir signalé ni d'avoir cliqué.
 
-**2. Qualification (Dr Maes, par téléphone si besoin).**
-- Combien de postes sont touchés ? Le serveur est-il touché ? Ne testez pas en ouvrant des fichiers depuis d'autres postes : demandez simplement aux collègues.
+**2. Qualification** (Dr Maes, avec l'assurance) :
+- Quels ordinateurs sont touchés ? Le serveur ? Le disque USB ?
+- Microsoft 365 fonctionne-t-il normalement (tester depuis un téléphone) ? Des e-mails suspects partent-ils d'un compte du cabinet ?
+- Le logiciel patients et l'agenda fonctionnent-ils (tester depuis un appareil sain) ?
 - Les pirates parlent-ils d'un vol de données ?
-- Notez le niveau choisi dans le journal.
+- Choisir le niveau de gravité.
 
 **3. Confinement.**
-- Les postes touchés et le serveur restent allumés et débranchés du réseau.
-- Si le spécialiste le demande, débranchez l'alimentation de la box internet (et du switch). Cela coupe tout le cabinet d'internet sans éteindre les ordinateurs.
-- Microsoft 365, le logiciel patients et l'agenda sont hébergés à l'extérieur. Ils ne sont probablement pas chiffrés, mais les mots de passe tapés sur un poste infecté ont pu être volés. Le Dr Maes ou le prestataire s'en occupe **depuis un appareil sain** (téléphone personnel, PC à domicile) :
-  - changer les mots de passe Microsoft 365 des comptes utilisés sur les postes touchés, en commençant par le compte administrateur, et vérifier que la double authentification (MFA) est active ;
-  - appeler le support de l'éditeur du logiciel patients pour signaler l'incident, faire fermer les sessions ouvertes, vérifier les connexions récentes et changer les mots de passe ;
-  - changer le mot de passe de l'agenda en ligne.
+- Les postes et le serveur restent débranchés du réseau, sans être éteints, sauf consigne du technicien.
+- **Sauvegarde cloud :** la copie du soir risque d'envoyer des fichiers chiffrés dans le cloud et d'écraser les bonnes versions. Débrancher le serveur l'empêche normalement. Le prestataire ou l'assurance doit vérifier au plus vite que la sauvegarde est suspendue et que les anciennes versions sont conservées.
+- **Mots de passe :** sur consigne du technicien, les changer depuis un appareil sain pour Microsoft 365, le logiciel patients, l'agenda et la banque. Vérifier que la double authentification est activée.
+- **Éditeur du logiciel patients :** le prévenir, même si le logiciel fonctionne, pour qu'il surveille les connexions venant du cabinet.
+- Conserver le disque USB, les photos et le message de rançon : ce sont des preuves pour la police et l'assurance.
 
-**4. Continuité des soins.**
-- Les soins continuent.
-- Consultez l'agenda depuis un téléphone en 4G, qui n'est pas connecté au Wi-Fi du cabinet.
-- Notez les séances sur la fiche papier (patient, date, heure, kiné, type de séance) pour les encoder plus tard.
+**4. Éradication** (technicien uniquement). Il identifie par où les pirates sont entrés, puis nettoie ou réinstalle les machines. Le personnel du cabinet n'intervient pas à cette étape.
 
-**5. Éradication (technicien uniquement).**
-- Il cherche comment le virus est entré et s'il est encore présent.
-- Aucune réinstallation avant que les traces utiles à l'assurance et à la police aient été conservées.
+**5. Restauration.**
+- Uniquement après l'accord du technicien, sur des machines propres.
+- Depuis une sauvegarde **vérifiée saine**, antérieure à l'infection.
+- Faire contrôler les fichiers restaurés par la personne chargée de la comptabilité.
+- Surveillance renforcée pendant [2 à 4 semaines].
 
-**6. Restauration (technicien, avec l'accord du Dr Maes).**
-- Le disque USB, branché en permanence, a probablement été chiffré lui aussi. La copie cloud est sans doute la meilleure piste : il faut vérifier si elle garde plusieurs versions et depuis quand les fichiers sont chiffrés.
-- On restaure sur une machine propre et on vérifie que les fichiers s'ouvrent avant de remettre en service.
-- Les postes sont remis sur le réseau un par un, puis surveillés de près pendant 2 à 4 semaines.
+**6. Clôture.** Le Dr Maes clôture l'incident quand les machines sont propres, les mots de passe changés, les notifications faites et le journal complet. Il fixe alors le retour d'expérience dans les deux semaines.
 
-**7. Rançon.** Le cabinet n'a pas l'intention de payer : payer ne garantit ni le retour des fichiers ni la non-publication des données. Si la question se pose quand même (aucune sauvegarde utilisable), le Dr Maes décide après avis de l'assureur, de la police et d'un conseil spécialisé. Personne ne contacte les pirates.
-
-**8. Clôture.** L'incident est clos quand toutes ces conditions sont remplies :
-- les machines sont déclarées saines ;
-- les données sont restaurées et vérifiées ;
-- les mots de passe sont changés ;
-- les notifications sont faites ;
-- les séances notées sur papier sont encodées.
+**Continuité des soins.** Le logiciel patients et l'agenda sont hébergés à l'extérieur : les consultations peuvent en général continuer, **uniquement depuis des appareils sains** et après accord du technicien. Prévoir un mode papier : liste des rendez-vous du jour (depuis l'agenda consulté sur téléphone) et cahier des séances à encoder plus tard. [À adapter : facturation, tiers payant, eHealth.]
 
 ---
 
 ## Notifications
 
-Les délais sont des repères : **faites-les vérifier par le DPO ou un juriste** selon les faits. Les dossiers patients sont des données de santé : en cas de doute, considérez qu'il y a violation de données personnelles.
+Les délais sont des repères, à confirmer avec l'assureur et un conseil juridique.
 
-| Destinataire | Délai | Qui notifie | Condition |
-|---|---|---|---|
-| Assureur cyber (ligne d'urgence) | Immédiatement (délai contractuel à vérifier) | Premier intervenant, puis Dr Maes | Toujours, même en cas de doute |
-| Prestataire informatique | Dès qu'il est joignable ; laisser un message le week-end | Dr Maes | Toujours |
-| Éditeur du logiciel patients | Immédiatement | Dr Maes | Toujours, car les accès sont peut-être compromis |
-| Police locale (zone Mons-Quévy) : plainte | Sous 24 à 48 h (souvent exigée par l'assureur) | Dr Maes | Toujours. Apporter les photos et le journal |
-| Autorité de protection des données (APD) | **72 h** après en avoir pris connaissance (art. 33 RGPD), même avec des informations incomplètes | Dr Maes, avec le DPO | Sauf absence de risque pour les personnes, ce qui est rare avec des données de santé |
-| Patients concernés | Dans les meilleurs délais | Dr Maes | Si le risque est élevé pour eux (art. 34 RGPD), par exemple un vol avéré de dossiers |
-| CCB (Centre pour la Cybersécurité Belgique) | Pas de délai légal si le cabinet n'est pas soumis à NIS2 | Dr Maes ou prestataire | Probablement pas soumis (moins de 50 personnes), à confirmer. Une notification volontaire reste utile |
-| Personnel | Dans l'heure | Dr Maes | Toujours |
+| Destinataire | Quand | Délai | Qui | Condition |
+|---|---|---|---|---|
+| Dr Maes | Dès la découverte | Immédiat | Premier intervenant | Toujours |
+| Assurance cyber | Dès la découverte | Immédiat. Le contrat fixe souvent un délai court [à vérifier] | Premier intervenant ou Dr Maes | Toujours. Suivre ses consignes, elle peut imposer ses experts |
+| Prestataire habituel | Premier jour ouvrable, ou plus tôt s'il est joignable | Au plus vite | Dr Maes | Toujours, en accord avec l'assureur |
+| Éditeur du logiciel patients | Dès la qualification | Le jour même | Dr Maes ou coordination | Toujours |
+| Police locale (plainte) | Après les premiers gestes | Dans les jours qui suivent. Souvent exigée par l'assureur | Dr Maes | Recommandé. Apporter photos, journal et message de rançon |
+| Autorité de protection des données (APD) | Si des données personnelles ont pu être lues, copiées, perdues ou rendues indisponibles | 72 h après en avoir pris connaissance (art. 33 RGPD) | Dr Maes (ou le DPO, s'il existe [à vérifier]) | Des données de santé sont probablement en jeu (factures, courriers sur le serveur). Partir du principe qu'il faut notifier, et le faire valider |
+| Patients concernés | Si le risque pour eux est élevé | Dans les meilleurs délais (art. 34 RGPD) | Dr Maes | Sur décision, avec avis juridique |
+| CCB (Centre pour la Cybersécurité Belgique) | Signalement volontaire | Au plus vite | Dr Maes ou technicien | Moins de 50 personnes : a priori pas concerné par NIS2 [à vérifier], mais le CCB accepte les signalements et peut aider |
+| Banque | Si les accès bancaires ont pu être compromis | Immédiat | Dr Maes | Blocage préventif en cas de doute |
+
+**La rançon.** Il est déconseillé de payer : cela ne garantit ni la récupération des fichiers ni la non-publication des données. Seul le Dr Maes décide, après avis de l'assureur, de la police et d'un conseil spécialisé. Personne d'autre ne contacte les attaquants.
 
 ---
 
 ## Communication
 
-**Canal de secours :** la messagerie peut être compromise. Communiquez par téléphone et par le groupe WhatsApp ou Signal du cabinet, depuis les téléphones personnels.
+**Canal de secours** si la messagerie est touchée : [groupe WhatsApp, Signal ou SMS du cabinet, à créer dès maintenant].
 
-**Message interne (Dr Maes) :**
-> Incident informatique au cabinet ce [jour]. Merci de ne plus utiliser les ordinateurs du cabinet et de ne pas vous connecter à la messagerie ou au logiciel patients depuis ces postes, jusqu'à nouvel ordre. Les soins continuent : notez vos séances sur la fiche papier à l'accueil. N'en parlez pas aux patients ni sur les réseaux sociaux, renvoyez les questions vers moi. Prochain point : [heure].
+**Message interne :**
+> Un incident informatique touche le cabinet depuis [jour, heure]. Merci de **ne plus utiliser les ordinateurs du cabinet** jusqu'à nouvel ordre et de ne pas vous connecter au logiciel patients, à l'agenda ou à la messagerie depuis ces ordinateurs. Les consultations sont maintenues [ou : adaptées]. Notez vos séances sur papier. Merci de ne pas en parler aux patients ni sur les réseaux sociaux pour l'instant. Si vous avez remarqué quelque chose d'inhabituel ces derniers jours (e-mail étrange, pièce jointe), dites-le sans crainte. Prochain point : [heure]., Dr Maes
 
-**Réponse aux patients (secrétaires) :**
-> Nous avons un problème informatique en cours de résolution. Votre rendez-vous est maintenu. Nous vous recontacterons si quelque chose change.
+**Message d'attente aux patients** (après accord du Dr Maes) :
+> Le cabinet rencontre actuellement un problème informatique. Les séances sont maintenues. Certains services (documents, factures, réponses par e-mail) peuvent prendre du retard. Merci de votre compréhension.
 
-**Message externe (seulement si nécessaire, validé par le Dr Maes et l'assureur) :**
-> Le cabinet a été victime d'un incident informatique le [date]. Nous avons immédiatement pris des mesures pour le contenir avec l'aide de spécialistes et informé les autorités compétentes. Les soins se poursuivent. Si des données vous concernant ont été touchées, nous vous en informerons directement. Contact : [...]
-
-Ne donnez aucun détail technique et aucune hypothèse sur l'auteur.
+Ne parler ni de « piratage » ni de « vol de données » tant que ce n'est pas établi et validé.
 
 ---
 
-## Journal d'incident (sur papier, imprimez-en 3 pages à l'avance)
-
-Incident du ……/……/…… Niveau : …… Constaté par : ……………
+## Journal d'incident
 
 | Heure | Action | Par qui | Observation |
 |---|---|---|---|
-| 08:42 | Message de rançon constaté sur le PC de l'accueil | (prénom) | Photo prise |
-| 08:44 | Câble réseau du PC débranché, Wi-Fi coupé | | |
-| 08:46 | Disque USB débranché et rangé | | |
+| 08:42 | Message de rançon constaté sur le PC de l'accueil | [prénom] | Photo prise |
+| | | | |
+| | | | |
 | | | | |
 
 ---
 
-## Fiche contacts (à compléter, plastifier et garder à côté du téléphone de l'accueil)
+## Fiche contacts (à imprimer, sans aucun mot de passe)
 
-**Aucun mot de passe sur cette fiche.**
-
-| Qui | Nom | Téléphone | Autre info | Disponibilité |
+| Qui | Nom | Téléphone | Disponibilité | Remarque |
 |---|---|---|---|---|
-| Dr Maes | | | | |
-| Suppléant | | | | |
-| Assurance cyber : ligne d'urgence | | | N° de police : | 24 h/24 ? |
-| Courtier d'assurance | | | | |
-| Prestataire informatique | | | | En semaine |
-| Support du logiciel patients | | | | |
-| Agenda en ligne | | | | |
-| Fournisseur internet | | | N° client : | |
-| DPO / conseil RGPD | | | | |
-| Police locale Mons-Quévy | | | | |
-| APD | | | autoriteprotectiondonnees.be | |
-| CCB | | | ccb.belgium.be / safeonweb.be | |
+| Gérant | Dr Maes | | | Décide |
+| Suppléant·e | | | | |
+| Assurance cyber, ligne d'urgence | | | [24/7 ? à vérifier] | N° de police : ……… |
+| Courtier | | | | |
+| Prestataire informatique | | | Semaine | |
+| Éditeur du logiciel patients | | | | Réf. client : ……… |
+| Agenda en ligne, support | | | | |
+| Administrateur Microsoft 365 | | | | |
+| Police locale (zone Mons-Quévy [à vérifier]) | | | | Urgence : 101 |
+| APD | | | | Notification en ligne |
+| CCB | | | | Formulaire sur son site |
+| Banque, blocage | | | 24/7 | |
+| DPO / conseil juridique | [à vérifier] | | | |
 
-Les mots de passe administrateur sont conservés : ……………… (par exemple dans une enveloppe scellée au coffre du Dr Maes).
+Emplacements : serveur [……] · mots de passe administrateur [coffre-fort ou enveloppe scellée chez ……] · police d'assurance papier [……] · accès à la sauvegarde cloud [……].
 
 ---
 
-## Retour d'expérience (dans les deux semaines, sans chercher de coupable)
+## Retour d'expérience (dans les 2 semaines, sans chercher de coupable)
 
-Participants : le Dr Maes, les secrétaires, le prestataire et un kiné. La personne qui a cliqué doit surtout entendre qu'elle a bien fait de signaler vite.
-
-- Comment le virus est-il entré ? Qu'est-ce qui aurait pu l'arrêter ?
-- Combien de temps s'est écoulé entre les premiers signes et la réaction ?
-- Quelle étape de la procédure a posé problème aux secrétaires ?
-- La sauvegarde était-elle utilisable ? Combien de jours de travail ont été perdus ?
-- Les notifications ont-elles été faites à temps ?
+- Comment l'incident a-t-il été détecté, et combien de temps après le début ?
+- Les 15 premières minutes ont-elles pu être suivies ? Qu'est-ce qui était flou ?
+- Les contacts ont-ils répondu ? Le numéro de l'assurance était-il le bon ?
+- Les sauvegardes étaient-elles saines ? Combien de temps a pris la restauration ? Qu'a-t-on perdu ?
+- Par où les pirates sont-ils entrés ? Qu'est-ce qui l'aurait empêché ?
+- Les notifications ont-elles été faites dans les délais ?
 - Que change-t-on, qui s'en charge et pour quand ?
 
 ---
 
-## Annexe : à faire maintenant, avant tout incident
+## Points importants à régler dès maintenant
 
-1. **Disque USB branché en permanence : c'est le point faible principal.** Le virus le chiffrera avec le serveur. Il faut passer à deux disques en alternance, dont un toujours débranché et rangé hors du cabinet.
-2. **Copie cloud** : vérifier qu'elle garde plusieurs versions (au moins 30 jours) et que le serveur ne peut pas les effacer. Sinon, la sauvegarde de la nuit qui suit l'attaque remplacera les bonnes copies par des fichiers chiffrés.
-3. **Tester une restauration** deux fois par an.
-4. **Assurance cyber** : relire le contrat et noter sur la fiche contacts la ligne d'urgence, le délai de déclaration et les garanties. Vérifier aussi les exclusions : certains contrats exigent la MFA ou des sauvegardes hors ligne.
-5. **Double authentification (MFA)** sur Microsoft 365 et sur le logiciel patients.
-6. **Étiqueter en rouge** les câbles réseau et le disque USB, et montrer aux secrétaires où ils se trouvent.
-7. **Désigner** le suppléant du Dr Maes et le DPO.
-8. **Créer** le groupe WhatsApp ou Signal du cabinet et la fiche papier de séances.
-9. **Exercice « samedi fictif »** de 30 minutes par an avec les secrétaires.
-10. **Confirmer auprès du CCB** que le cabinet n'est pas soumis à NIS2.
-
----
-
-**À savoir :**
-- Tant que les étiquettes rouges ne sont pas posées et la fiche contacts remplie (surtout la ligne d'urgence de l'assureur), les secrétaires ne pourront pas appliquer la procédure un samedi.
-- Le disque USB branché en permanence est le vrai risque. Le point 1 de l'annexe est à régler en priorité avec votre prestataire.
+1. **Le disque USB branché en permanence ne protège pas vraiment.** Un rançongiciel chiffre généralement aussi les disques connectés. Demandez au prestataire d'alterner au moins deux disques, dont un toujours débranché et gardé hors du cabinet.
+2. **Sauvegarde cloud.** Vérifiez qu'elle conserve plusieurs versions (par exemple 30 jours) et qu'une copie chiffrée ne remplace pas la bonne version. Sinon, l'étape 4 (débrancher le serveur) devient la seule chose qui sauve vos données.
+3. **L'assurance cyber est votre vrai contact du samedi**, puisque le prestataire n'est joignable qu'en semaine. Lisez la police avec le courtier : numéro d'urgence, disponibilité le week-end, délai de déclaration, experts imposés, exclusions (certaines polices exigent la double authentification ou une sauvegarde hors ligne).
+4. **Testez une restauration** deux fois par an, pendant la demi-journée du prestataire.
+5. **Activez la double authentification** pour tout le monde sur Microsoft 365, le logiciel patients, l'agenda et la banque.
+6. **Désignez les suppléants**, remplissez la fiche contacts et créez le groupe de messagerie de secours.
+7. **Faites un exercice de 30 minutes avec les secrétaires :** lire la première page, puis trouver le serveur, son câble réseau et le disque USB.
+8. Faites valider la partie RGPD (DPO éventuel, notification à l'APD) par un conseil juridique. Consultez aussi les guides du CCB pour les petites structures (Safeonweb@work).

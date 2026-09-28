@@ -1,183 +1,191 @@
-# nettoyage.ps1
+# nettoyage.ps1 : archivage des scans et purge du dossier temporaire
 
-Chaque nuit, ce script déplace vers le NAS les scans de plus de 30 jours, vide le dossier temporaire de Windows, puis envoie un e-mail « Nettoyage OK » à Kevin.
+Chaque nuit, le script déplace vers le NAS les fichiers de `D:\Partages\Scans` qui n'ont pas été modifiés depuis plus de 30 jours. Il vide ensuite `C:\Windows\Temp` et envoie un e-mail « Nettoyage OK ».
 
-> ⚠️ **À régler avant le départ de Kevin (fin octobre)**
-> 1. **Le script peut effacer des scans sans les avoir archivés.** Si la copie vers le NAS échoue, le fichier est quand même supprimé du serveur. C'est ce qui arrivera le jour où le compte NAS de Kevin sera désactivé ou son mot de passe changé.
-> 2. **Un mot de passe est écrit en clair** dans le script (compte NAS personnel de Kevin).
-> 3. **L'e-mail dit toujours « OK »**, même en cas d'échec, et il part dans la boîte de Kevin. Après son départ, plus personne ne verra rien.
->
-> **Ne désactivez pas les comptes de Kevin tant que le script n'est pas corrigé ou suspendu.**
+> ⚠️ **Deux problèmes sont à traiter avant le départ de Kevin fin octobre.** Ils sont détaillés dans « Risques relevés ».
+> 1. Si la copie vers le NAS échoue, **le fichier est quand même supprimé du serveur**. Il est alors perdu, sauf s'il existe une sauvegarde. Or le script se connecte au NAS avec le **compte personnel de Kevin**. Le jour où ce compte sera désactivé, chaque exécution risque de supprimer tous les scans de plus de 30 jours sans les archiver.
+> 2. Le mot de passe de ce compte est écrit en clair dans le script.
 
 ---
 
 ## Rôle et contexte
 
-- **Objectif :** éviter que le partage `D:\Partages\Scans` se remplisse, en déplaçant les vieux scans vers le NAS. Au passage, le script vide aussi `C:\Windows\Temp`.
-- **Où :** sur le serveur de fichiers, dans `C:\Scripts\` (à confirmer, c'est là que se trouve le journal).
-- **Quand :** tous les jours à 2h00, par le planificateur de tâches, sous le compte administrateur local.
-- **Qui en dépend :** toute personne qui cherche un vieux scan. Après 30 jours, il n'est plus dans le partage mais sur `\\NAS01\archives\scans`.
-- **Auteur :** Kevin, 2021. Il n'existe pas d'autre documentation connue.
+- **But probable** : éviter que le partage des scans grossisse sans limite. Les documents scannés depuis plus d'un mois sont déplacés sur le NAS d'archives. Le nettoyage de `C:\Windows\Temp` a été ajouté au même script par commodité, sans lien avec les scans.
+- **Serveur** : serveur de fichiers (nom à compléter).
+- **Planification** : tâche planifiée tous les jours à 2h00, sous le compte administrateur local.
+- **Auteur** : Kevin, 2021. Il n'y a aucune autre documentation connue.
+- **Qui en dépend** : toute personne qui cherche un scan de plus de 30 jours. Ce scan ne se trouve plus sur `D:\Partages\Scans` mais sur `\\NAS01\archives\scans`. Les utilisateurs le savent-ils ?
 
 ## Fonctionnement
 
-1. **Connexion au NAS.** `net use Z: \\NAS01\archives` avec le compte `NAS01\kevin` et son mot de passe écrit dans le script. La lettre Z: n'est plus utilisée ensuite, mais cette connexion sert quand même : c'est elle qui donne les droits sur NAS01 au compte administrateur local. Si on retire cette ligne sans autre solution, la copie ne fonctionne plus.
-2. **Recherche des vieux scans.** Le script parcourt `D:\Partages\Scans` et tous ses sous-dossiers. Il retient les fichiers **modifiés** il y a plus de 30 jours (date de dernière modification, pas date de création).
-3. **Pour chaque fichier retenu :**
-   - Il calcule le dossier de destination `\\NAS01\archives\scans\<nom du dossier parent immédiat>`. **Seul le dernier niveau de dossier est gardé** : `Scans\ClientA\2023\x.pdf` part dans `archives\scans\2023\x.pdf`. L'arborescence est donc aplatie.
-   - Il crée ce dossier s'il n'existe pas.
-   - Il copie le fichier en **écrasant** un éventuel fichier du même nom (`-Force`).
-   - Il **supprime** l'original, **même si la copie a échoué**.
-   - Il écrit « deplace <chemin> » dans `C:\Scripts\nettoyage.log`, là encore même si la copie a échoué.
-4. **Vidage de `C:\Windows\Temp`.** Tout le contenu est supprimé, quel que soit l'âge des fichiers. Les erreurs sont ignorées sans message, par exemple pour les fichiers en cours d'utilisation.
-5. **Envoi de l'e-mail** « Nettoyage OK » à kevin@exemple-courtage.be, **quoi qu'il se soit passé** avant.
-
-Le script ne vérifie rien et ne s'arrête sur aucune erreur.
+1. **Paramètres** : dossier source `D:\Partages\Scans`, destination `\\NAS01\archives\scans`, journal `C:\Scripts\nettoyage.log`, date limite = aujourd'hui moins 30 jours.
+2. **Connexion au NAS** : `net use Z: \\NAS01\archives` avec le compte `NAS01\kevin` et son mot de passe [SECRET RETIRÉ].
+   - Le lecteur `Z:` **n'est jamais utilisé ensuite**. Le script travaille avec le chemin réseau `\\NAS01\...`. Cette commande sert donc uniquement à ouvrir une session authentifiée sur le NAS. Sans elle, le compte administrateur local du serveur n'aurait sans doute pas le droit d'écrire sur le NAS.
+   - Le lecteur n'est jamais déconnecté à la fin.
+3. **Sélection des fichiers** : tous les fichiers de `D:\Partages\Scans` et de ses sous-dossiers dont la **date de dernière modification** (pas la date de création) a plus de 30 jours.
+4. **Pour chaque fichier** :
+   1. Le dossier de destination est `\\NAS01\archives\scans\<nom du dossier parent direct>`. **Seul le dernier niveau de dossier est conservé** : `Scans\ClientA\2024\scan001.pdf` arrive dans `archives\scans\2024\scan001.pdf`. Un fichier placé directement dans `Scans` arrive dans `archives\scans\Scans\`.
+   2. Ce dossier est créé s'il n'existe pas.
+   3. Le fichier est copié en **écrasant** un éventuel fichier de même nom (`-Force`).
+   4. Le fichier source est **supprimé définitivement**, sans passer par la corbeille.
+   5. Une ligne « <date> deplace <chemin complet> » est ajoutée au journal. Cette ligne est écrite **même si la copie a échoué**.
+5. **Purge de `C:\Windows\Temp`** : tout son contenu est supprimé, quel que soit son âge. Les erreurs sont masquées (`-ErrorAction SilentlyContinue`), par exemple pour les fichiers en cours d'utilisation.
+6. **E-mail** : un message « Nettoyage OK » part vers `kevin@exemple-courtage.be`. Il est envoyé **dans tous les cas**, même si tout a échoué. Il ne contient aucun détail (pas de corps, pas de nombre de fichiers).
 
 ## Prérequis
 
 | Élément | Détail |
 |---|---|
-| Système | Windows Server avec PowerShell 5.1 (version à confirmer) |
-| Compte d'exécution | Administrateur local du serveur de fichiers (via la tâche planifiée) |
-| Accès au NAS | Compte `NAS01\kevin`, mot de passe en clair dans le script ([SECRET RETIRÉ]) |
-| Chemin source | `D:\Partages\Scans` (local) |
-| Chemin destination | `\\NAS01\archives\scans` (partage SMB) |
-| Journal | `C:\Scripts\nettoyage.log`, qui doit être accessible en écriture |
-| SMTP | `smtp.exemple-courtage.be`, envoi sans authentification ni chiffrement (à vérifier qu'il l'accepte encore) |
-| Lettre Z: | Doit être libre dans la session de la tâche |
+| Système | Windows Server avec PowerShell 3.0 ou plus (le paramètre `-File` de `Get-ChildItem` l'exige). |
+| Compte d'exécution | Administrateur local du serveur. Il doit pouvoir lire et supprimer dans `D:\Partages\Scans`, supprimer dans `C:\Windows\Temp` et écrire dans `C:\Scripts`. |
+| Compte NAS | `NAS01\kevin` : compte **personnel** local au NAS, avec droit d'écriture sur `\\NAS01\archives\scans`. |
+| Réseau | Accès SMB (port 445) du serveur vers NAS01. Accès SMTP (port 25 par défaut, sans authentification ni chiffrement) vers `smtp.exemple-courtage.be`. |
+| Lecteur | La lettre `Z:` doit être libre dans la session du compte d'exécution. |
+| Fichiers | Le script est probablement dans `C:\Scripts\` (**à vérifier** dans la tâche planifiée). Le journal est `C:\Scripts\nettoyage.log`. |
 
 ## Paramètres et configuration
 
-Le script n'accepte aucun paramètre. Tout est écrit en dur au début du fichier.
+Aucun paramètre n'est passé au lancement. Tout est écrit en dur dans le script.
 
 | Nom | Type | Défaut | Effet |
 |---|---|---|---|
-| `$src` | Chemin | `D:\Partages\Scans` | Dossier dont on retire les vieux scans |
-| `$arch` | Chemin UNC | `\\NAS01\archives\scans` | Destination de l'archive |
-| `$log` | Chemin | `C:\Scripts\nettoyage.log` | Journal des déplacements (grossit sans limite depuis 2021) |
-| `$limite` | Date | Aujourd'hui − 30 jours | Âge minimum (date de modification) pour archiver |
-| Identifiants NAS | Texte | `NAS01\kevin` / [SECRET RETIRÉ] | Accès au NAS |
-| Destinataire e-mail | Texte | kevin@exemple-courtage.be | Seule personne prévenue |
+| `$src` | Chemin | `D:\Partages\Scans` | Dossier scanné récursivement. Ses fichiers anciens sont **supprimés**. |
+| `$arch` | Chemin UNC | `\\NAS01\archives\scans` | Destination des archives. |
+| `$log` | Chemin | `C:\Scripts\nettoyage.log` | Journal. Il grossit sans limite, sans rotation. |
+| `$limite` | Date | Aujourd'hui − 30 jours | Âge minimal (date de modification) pour qu'un fichier soit déplacé. |
+| Identifiants `net use` | Texte | `NAS01\kevin` / [SECRET RETIRÉ] | Authentification sur le NAS. |
+| Destinataire du mail | Adresse | `kevin@exemple-courtage.be` | Seule notification existante. |
+| Serveur SMTP | Nom d'hôte | `smtp.exemple-courtage.be` | Relais d'envoi. |
 
 ## Effets et actions sensibles
 
-- **Suppression définitive** des fichiers du partage Scans. Ils ne passent pas par la corbeille.
-- **Écrasement silencieux** dans l'archive : deux scans qui portent le même nom et viennent de dossiers dont le dernier niveau a le même nom (par exemple deux dossiers `2023` différents) s'écrasent l'un l'autre. Seul le dernier copié reste.
-- **Suppression de tout `C:\Windows\Temp`**, y compris des fichiers récents. À 2h du matin, cela peut perturber une mise à jour ou une installation en cours. Le risque est faible mais réel.
-- **Noms de fichiers contenant des crochets `[ ]`** : sans `-LiteralPath`, PowerShell interprète ces crochets comme un motif de recherche. La copie et la suppression peuvent alors viser un autre fichier que prévu. Je n'ai pas pu vérifier le comportement exact sans tester, donc à traiter comme un risque.
+- **Suppression définitive** des fichiers source (étape 4.4), même si la copie a échoué. C'est l'action la plus dangereuse du script.
+- **Écrasement** dans l'archive : deux fichiers de même nom venant de dossiers parents de même nom (par exemple `ClientA\2024\scan001.pdf` et `ClientB\2024\scan001.pdf`) se retrouvent au même endroit. Le second écrase le premier. Les scanners nomment souvent leurs fichiers `scan0001.pdf`, `doc00123.pdf`… Ce cas est donc plausible et **a peut-être déjà causé des pertes**.
+- **Perte de l'arborescence** : l'archive ne garde que le dernier niveau de dossier.
+- **Vidage complet de `C:\Windows\Temp`** : c'est en général sans conséquence la nuit. Cela peut toutefois gêner une installation ou une mise à jour Windows en cours à 2h00.
+- **Journal trompeur** : « deplace » est écrit même si le fichier n'a pas été copié.
+- **Alerte trompeuse** : « Nettoyage OK » est envoyé même en cas d'échec total.
+- Les dossiers source vidés ne sont pas supprimés. L'archive, elle, n'est jamais purgée et grossit indéfiniment.
 
 ## Exécution
 
-**Planifiée :** planificateur de tâches, tous les jours à 2h00, compte administrateur local. Pour retrouver la tâche et son dernier résultat :
+**Planifiée** : relever dans le Planificateur de tâches le nom exact de la tâche, la commande lancée (probablement `powershell.exe -ExecutionPolicy Bypass -File C:\Scripts\nettoyage.ps1`), l'option « exécuter même si l'utilisateur n'est pas connecté » et le compte utilisé. Reporter ces éléments ici.
+
+**Manuelle** : à éviter tant que le problème de copie/suppression n'est pas corrigé. Si c'est nécessaire, lancer une console PowerShell en tant qu'administrateur puis `& C:\Scripts\nettoyage.ps1`.
+
+**Test sans risque** (lecture seule, rien n'est modifié). Cette commande liste ce que le script déplacerait la prochaine nuit et signale les collisions de noms :
 
 ```powershell
-Get-ScheduledTask | Where-Object { $_.Actions.Arguments -like '*nettoyage*' } |
-  ForEach-Object { $_ ; $_ | Get-ScheduledTaskInfo }
-```
-
-Le code de retour vaudra probablement 0 même en cas d'échec, puisque le script ne signale aucune erreur. Il ne prouve donc rien.
-
-**Manuelle :** ne pas lancer le script tel quel pour « voir ». Il supprime des fichiers.
-
-**Tester sans rien changer** : cette commande liste ce qui *serait* déplacé, en lecture seule :
-
-```powershell
+$src = "D:\Partages\Scans"; $arch = "\\NAS01\archives\scans"
 $limite = (Get-Date).AddDays(-30)
-Get-ChildItem 'D:\Partages\Scans' -Recurse -File |
-  Where-Object { $_.LastWriteTime -lt $limite } |
-  Select-Object FullName, LastWriteTime,
-    @{n='Destination';e={ Join-Path '\\NAS01\archives\scans' $_.Directory.Name }}
+$liste = Get-ChildItem $src -Recurse -File | Where-Object { $_.LastWriteTime -lt $limite } |
+    Select-Object FullName, LastWriteTime,
+        @{n='Destination'; e={ Join-Path (Join-Path $arch $_.Directory.Name) $_.Name }}
+$liste | Format-Table -AutoSize
+# Fichiers qui s'écraseraient mutuellement dans l'archive :
+$liste | Group-Object Destination | Where-Object Count -gt 1 | Select-Object Name, Count
 ```
 
-**Vérifier que ça a marché**, le lendemain matin :
-1. Dernières lignes du journal : `Get-Content C:\Scripts\nettoyage.log -Tail 20`
-2. Pour quelques fichiers cités dans le journal, vérifier qu'ils existent **vraiment** dans `\\NAS01\archives\scans\...`. Le journal ne le garantit pas.
-3. Ne pas se fier à l'e-mail « Nettoyage OK ».
+Pour tester le script complet, en faire une copie. Ajouter `-WhatIf` à `New-Item`, `Copy-Item` et `Remove-Item`, puis mettre en commentaire la purge de `Temp` et l'envoi du mail.
+
+**Vérifier que ça a marché** : l'e-mail ne prouve rien. Il faut contrôler :
+- la fin de `C:\Scripts\nettoyage.log` (lignes datées de la nuit) ;
+- la présence des fichiers correspondants sur `\\NAS01\archives\scans\` ;
+- le « Résultat de la dernière exécution » de la tâche planifiée.
 
 ## Dépannage
 
 | Symptôme | Cause probable | Que faire |
 |---|---|---|
-| Des scans ont disparu du partage et sont introuvables sur le NAS | La copie a échoué (NAS inaccessible, compte Kevin désactivé, mot de passe changé, NAS plein) mais la suppression a eu lieu | Suspendre la tâche immédiatement, puis voir « Retour arrière » |
-| Un scan archivé a un contenu différent de celui attendu | Écrasement par un fichier du même nom venant d'un autre dossier | Restaurer depuis la sauvegarde du NAS |
-| Erreur « nom de périphérique local déjà utilisé » (erreur 85) | Z: déjà connecté dans la session | Sans gravité si la session vers NAS01 existe déjà. À supprimer dans la version corrigée |
-| Erreur 1326 ou « accès refusé » sur le NAS | Mot de passe du compte `kevin` changé ou compte désactivé | **Danger de perte de données**, voir la première ligne du tableau |
-| Plus d'e-mail reçu | Serveur SMTP qui exige maintenant une authentification, ou boîte de Kevin fermée | De toute façon, l'e-mail ne signalait pas les échecs |
-| Journal très volumineux | Aucune rotation depuis 2021 | L'archiver, puis repartir d'un fichier vide |
-| Partage Scans qui se remplit à nouveau | Tâche désactivée ou en échec | Vérifier la tâche, puis le journal |
+| Des scans ont disparu de `D:` et sont absents du NAS | La copie a échoué (NAS injoignable, compte refusé, disque plein) mais la suppression a eu lieu. | **Désactiver la tâche immédiatement.** Voir « Retour arrière ». |
+| Un scan archivé a un contenu différent de celui attendu | Écrasement par un fichier de même nom venant d'un autre dossier. | Restaurer depuis une sauvegarde du NAS antérieure à la date d'archivage. |
+| Erreur « nom de périphérique local déjà utilisé » (85) | `Z:` est déjà attribué dans la session du compte d'exécution. | `net use Z: /delete`, ou changer de méthode de connexion (voir améliorations). |
+| Erreur 1219 « connexions multiples… avec des noms d'utilisateur différents » | Une connexion à NAS01 existe déjà avec un autre compte. | `net use \\NAS01\archives /delete`, puis relancer. |
+| Erreur d'accès refusé / mot de passe incorrect sur le NAS | Le mot de passe du compte `kevin` a changé ou le compte a été désactivé. | **Désactiver la tâche** avant la prochaine nuit (risque de suppression sans copie). |
+| Plus aucun e-mail reçu | Normal après le départ de Kevin : sa boîte n'existe plus. Ou alors le SMTP est injoignable. | Changer le destinataire. Ne pas considérer l'absence de mail comme une alerte fiable. |
+| Le journal devient très volumineux | Aucune rotation. | Archiver ou tronquer `nettoyage.log` manuellement. |
+| Fichiers au nom contenant `[` ou `]` jamais archivés | PowerShell interprète les crochets comme un motif (comportement à confirmer sur ce serveur). | Utiliser `-LiteralPath` (voir améliorations). |
 
 ## Retour arrière
 
-- **Fichier supprimé de Scans mais présent sur le NAS** : le recopier depuis `\\NAS01\archives\scans\<dossier>` vers son emplacement d'origine. Le chemin exact d'origine se trouve dans le journal.
-- **Fichier supprimé de Scans et absent du NAS** : le seul recours est la sauvegarde du serveur de fichiers, ou les clichés instantanés (Volume Shadow Copies) du lecteur D: s'ils sont activés : clic droit sur le dossier › Propriétés › Versions précédentes. À vérifier dès maintenant que l'un des deux existe.
-- **Fichier écrasé dans l'archive** : sauvegarde ou instantanés du NAS01, si configurés.
-- **`C:\Windows\Temp`** : pas de retour arrière. En principe, rien d'important ne doit s'y trouver.
+Les fichiers supprimés **ne passent pas par la corbeille**. Sources possibles, dans l'ordre :
+
+1. **L'archive NAS** : `\\NAS01\archives\scans\<dossier parent>\<nom>`. Le journal donne le chemin d'origine complet de chaque fichier, ce qui permet de reconstruire l'emplacement initial. Attention aux fichiers écrasés.
+2. **Les clichés instantanés (VSS)** de `D:` s'ils sont activés : clic droit sur le dossier > Propriétés > Versions précédentes.
+3. **La sauvegarde du serveur de fichiers et/ou du NAS** : vérifier qu'elle existe, ce qu'elle couvre et sa durée de rétention.
+
+Il n'y a rien à restaurer pour `C:\Windows\Temp`.
 
 ## Risques relevés
 
 | Risque | Gravité | Recommandation |
 |---|---|---|
-| Suppression de l'original même si la copie a échoué | **Haute** | Supprimer seulement après une copie vérifiée (arrêt sur erreur, contrôle de présence et de taille) |
-| Mot de passe NAS en clair dans le script | **Haute** | Changer ce mot de passe (il est aussi dans ce message, et Kevin peut le réutiliser ailleurs). Utiliser un compte de service dédié, sans mot de passe dans le fichier |
-| Dépendance au compte personnel de Kevin | **Haute** | Créer un compte de service NAS avec des droits limités au dossier `archives\scans` |
-| Échecs invisibles : e-mail toujours « OK », envoyé à une personne qui part | **Haute** | Envoyer le rapport à une adresse partagée (ex. informatique@) et en indiquer le vrai résultat |
-| Écrasement dans l'archive à cause de l'arborescence aplatie | Moyenne | Conserver le chemin relatif complet sous `archives\scans` |
-| Exécution avec les droits administrateur local | Moyenne | Compte de service avec seulement les droits nécessaires |
-| Chemins interprétés comme motifs (crochets) | Moyenne | Utiliser `-LiteralPath` |
-| Vidage complet de `C:\Windows\Temp` | Faible | Limiter aux fichiers de plus de 7 jours, ou confier cette tâche à Windows (Assistant stockage / Nettoyage de disque) |
-| Journal sans rotation, date au format dépendant de la langue du système | Faible | Un journal par mois, dates au format ISO |
-| `Send-MailMessage` obsolète, sans chiffrement | Faible | Passer par le relais SMTP interne authentifié, ou un autre mécanisme d'alerte |
+| Suppression du fichier source même si la copie a échoué | **Critique** | Ne supprimer qu'après une copie réussie et vérifiée. D'ici là, envisager de suspendre la tâche. |
+| Dépendance au compte personnel `NAS01\kevin` : sa désactivation déclenchera le risque précédent | **Critique** | Créer un compte de service dédié sur le NAS **avant** de désactiver celui de Kevin. Ne pas désactiver le compte NAS de Kevin tant que le script n'est pas corrigé. |
+| Mot de passe en clair dans le script (et désormais partagé dans cette conversation) | **Haute** | Considérer le mot de passe comme compromis et le changer. Stocker l'identifiant dans le Gestionnaire d'identifiants Windows ou un coffre de secrets. Il suit un schéma devinable (saison + année) : vérifier que ce schéma n'est pas réutilisé ailleurs. |
+| Écrasement de fichiers de même nom dans l'archive, perte de l'arborescence | **Haute** | Reproduire le chemin relatif complet dans l'archive et ne jamais écraser. Vérifier dès maintenant si des pertes ont déjà eu lieu (commande de test ci-dessus). |
+| Notification « OK » envoyée sans condition, vers une boîte qui va disparaître | **Haute** | Envoyer un résumé réel (fichiers traités, erreurs) à une adresse partagée (ex. `it@…`) et alerter en cas d'erreur. |
+| Journal qui indique « deplace » même en cas d'échec | Moyenne | Journaliser le résultat réel de chaque opération. |
+| Exécution sous l'administrateur local | Moyenne | Utiliser un compte de service aux droits limités (lecture/suppression sur `Scans`, écriture sur l'archive). |
+| Vidage complet de `C:\Windows\Temp`, erreurs masquées | Faible | Ne supprimer que les éléments de plus de 7 jours, ou confier cette tâche à l'outil de nettoyage de Windows. |
+| Archive jamais purgée, journal sans rotation | Faible | Définir une durée de conservation. Les scans d'un courtier contiennent probablement des données personnelles : la durée doit correspondre au registre RGPD. |
+| `Send-MailMessage` déclaré obsolète par Microsoft, SMTP sans chiffrement | Faible | À remplacer lors d'une refonte. |
 
 ## En-tête à insérer dans le script
 
 ```powershell
 <#
 .SYNOPSIS
-    Archive vers le NAS les scans de plus de 30 jours et vide C:\Windows\Temp.
+    Archive sur le NAS les scans de plus de 30 jours, puis vide C:\Windows\Temp.
 
 .DESCRIPTION
-    1. Ouvre une session SMB vers \\NAS01\archives (compte NAS01\kevin).
-    2. Pour chaque fichier de D:\Partages\Scans (récursif) modifié il y a plus de 30 jours :
-       copie vers \\NAS01\archives\scans\<dossier parent immédiat> (écrase si existant),
-       puis SUPPRIME l'original, puis journalise dans C:\Scripts\nettoyage.log.
-       ATTENTION : la suppression a lieu même si la copie échoue.
-       ATTENTION : l'arborescence est aplatie (seul le dernier niveau de dossier est conservé).
+    1. Se connecte à \\NAS01\archives (net use Z:, lecteur non utilisé ensuite ;
+       sert uniquement à l'authentification).
+    2. Pour chaque fichier de D:\Partages\Scans (récursif) dont la date de dernière
+       modification a plus de 30 jours :
+         - le copie vers \\NAS01\archives\scans\<dossier parent direct>\ (écrase si existant),
+         - le SUPPRIME de la source (définitivement, même si la copie a échoué),
+         - écrit une ligne dans C:\Scripts\nettoyage.log.
     3. Supprime tout le contenu de C:\Windows\Temp (erreurs ignorées).
-    4. Envoie "Nettoyage OK" par e-mail, sans condition de succès.
+    4. Envoie un e-mail "Nettoyage OK" (envoyé dans tous les cas).
+
+    ATTENTION : si le NAS est injoignable ou refuse le compte, les fichiers sont
+    supprimés sans être archivés. Voir la documentation avant toute modification
+    du compte NAS utilisé.
 
 .NOTES
-    Auteur        : Kevin, 2021. Documenté le 28/09/2026 pour passation.
-    Exécution     : Planificateur de tâches, tous les jours à 02:00, administrateur local.
-    Dépendances   : \\NAS01\archives, smtp.exemple-courtage.be, compte NAS01\kevin.
-    Secret        : mot de passe NAS en clair plus bas. À RETIRER (voir documentation).
-    Test sans effet : voir la documentation (commande de listage en lecture seule).
-    Documentation : [emplacement de la doc interne]
+    Auteur d'origine : Kevin (2021)
+    Documenté le     : 2026-09-28
+    Responsable      : [À COMPLÉTER]
+    Planification    : Tâche planifiée "[NOM À COMPLÉTER]", tous les jours à 02:00,
+                       compte administrateur local
+    Dépendances      : NAS01 (SMB), smtp.exemple-courtage.be (port 25)
+    Journal          : C:\Scripts\nettoyage.log
+    Documentation    : [LIEN VERS CETTE DOCUMENTATION]
 #>
 ```
 
 ## Améliorations proposées
 
-**Priorité 1, avant la désactivation des comptes de Kevin :**
-1. Créer un compte de service sur le NAS, avec droits d'écriture limités à `archives\scans`.
-2. Corriger la logique pour supprimer seulement après une copie vérifiée (`-ErrorAction Stop` + `try/catch`, puis contrôle de présence et de taille à la destination).
-3. Retirer le mot de passe du script. Par exemple, faire tourner la tâche sous un compte de domaine qui a lui-même accès au NAS, ou utiliser le Gestionnaire d'identifiants Windows. Ensuite, changer le mot de passe de `NAS01\kevin`.
-4. Envoyer le rapport à une adresse d'équipe, avec le vrai résultat : nombre de fichiers déplacés, nombre d'échecs.
+Je n'ai rien modifié dans le script. Voici les corrections, par priorité :
 
-**Priorité 2 :**
-5. Conserver l'arborescence complète dans l'archive pour éviter les écrasements.
-6. Utiliser `-LiteralPath` partout.
-7. Ajouter un paramètre `-WhatIf` pour permettre les tests sans effet.
+1. **Maintenant, avant fin octobre** :
+   - ne supprimer la source que si la copie a réussi : `-ErrorAction Stop` dans un `try/catch`, et idéalement comparer la taille ou le hash du fichier copié ;
+   - créer un compte de service sur le NAS ;
+   - changer le mot de passe exposé ;
+   - rediriger le mail vers une adresse partagée.
+2. **Retirer le mot de passe du script** : identifiant stocké via le Gestionnaire d'identifiants Windows ou un coffre de secrets, ou droits NAS accordés directement au compte de service sans `net use`.
+3. **Conserver l'arborescence complète** dans l'archive et **refuser d'écraser** un fichier existant (le renommer ou le signaler).
+4. **Journal et alerte honnêtes** : consigner succès et échecs, envoyer un résumé chiffré et signaler clairement les erreurs.
+5. **Robustesse** : `-LiteralPath` pour les noms contenant des crochets, `net use /delete` en fin de script, rotation du journal, mode simulation (`-WhatIf` via `[CmdletBinding(SupportsShouldProcess)]`).
+6. **Séparer la purge de `C:\Windows\Temp`** dans une tâche distincte, limitée aux fichiers anciens.
+7. **Définir une durée de conservation** de l'archive, en cohérence avec le registre RGPD.
 
-**Priorité 3 :**
-8. Limiter le vidage de `C:\Windows\Temp` aux fichiers anciens, ou le retirer de ce script.
-9. Mettre en place la rotation du journal et des dates au format ISO.
-10. Vérifier qu'une sauvegarde couvre à la fois `D:\Partages\Scans` et `\\NAS01\archives`.
+**Questions à poser à Kevin avant son départ** :
+- Le compte `NAS01\kevin` sert-il à autre chose ?
+- Y a-t-il une sauvegarde du NAS et de `D:` ?
+- A-t-il déjà constaté des fichiers écrasés ou manquants ?
+- Quel est le nom exact de la tâche planifiée ?
+- D'autres scripts utilisent-ils le même compte ou le même mot de passe ?
 
----
-
-**Deux questions à poser à Kevin avant son départ :**
-- Le compte `NAS01\kevin` sert-il ailleurs (autres scripts, sauvegardes, imprimantes/scanners qui déposent sur le NAS) ?
-- Des scans ont-ils déjà disparu ou été écrasés depuis 2021 ?
-
-Le nom du serveur, les chemins et les adresses sont des informations internes : à anonymiser si ce document doit sortir de l'entreprise. Je n'ai pas modifié le script. Je peux vous préparer une version corrigée qui traite la priorité 1.
+Cette documentation contient des noms de serveurs, des chemins et des adresses internes. Elle doit rester interne ; si elle doit être publiée ailleurs, il faut d'abord anonymiser ces éléments. Je peux aussi écrire une version corrigée du script, qui traite au moins les points 1 et 3.

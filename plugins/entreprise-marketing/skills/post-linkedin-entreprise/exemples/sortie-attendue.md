@@ -1,52 +1,47 @@
+J'ai écrit deux versions à partir des faits. Je n'ai pas repris « révolution », « qualité incroyable » ni « les meilleurs de la région » : ce sont des affirmations que rien ne prouve, et une comparaison avec les concurrents qui peut poser problème. Le vrai argument, c'est de passer de 3–4 jours à 24 heures dès 50 exemplaires. C'est lui qui ouvre le post.
+
 ## Variante courte
 
-> Des petites séries dès 50 exemplaires, imprimées en 24 heures au lieu de 3 à 4 jours.
+> Depuis le 14 septembre, nous imprimons les petites séries en 24 heures. Avant, il fallait compter 3 à 4 jours.
 >
-> C'est ce que permet la presse numérique installée dans notre atelier de Mouscron le 14 septembre.
+> C'est possible grâce à notre nouvelle presse numérique, à partir de 50 exemplaires.
 >
-> Nadia et Kevin, nos deux opérateurs, se sont formés pendant trois semaines pour la prendre en main.
+> Nadia et Kevin ont été formés pendant trois semaines pour la faire tourner. Premier travail : 300 étiquettes pour la bière saisonnière de la brasserie Les Trois Clochers.
 >
-> Premier travail sorti de la machine : 300 étiquettes pour la bière saisonnière de la brasserie Les Trois Clochers.
+> Vous êtes une petite entreprise ou une association de Wallonie picarde et vous avez besoin d'une petite quantité, rapidement ? Parlons-en : [coordonnées].
 >
-> Vous êtes une petite entreprise ou une association de Wallonie picarde et vous avez besoin d'une petite série ? Écrivez-nous ou passez à l'atelier : [contact].
->
-> #WalloniePicarde #Imprimerie
-
-*(environ 600 caractères)*
+> #imprimerie #WalloniePicarde
 
 ## Variante développée
 
-> Des petites séries dès 50 exemplaires, imprimées en 24 heures au lieu de 3 à 4 jours.
+> 50 exemplaires, imprimés en 24 heures. Jusqu'ici, une petite série nous demandait 3 à 4 jours.
 >
-> Depuis le 14 septembre, une presse numérique tourne dans notre atelier de Mouscron. Elle répond à une demande qu'on entendait souvent : « Je n'ai besoin que de quelques centaines d'exemplaires, mais j'en ai besoin vite. »
+> Le 14 septembre, nous avons installé une nouvelle presse numérique dans notre atelier de Mouscron. Elle est faite pour les tirages courts : dès 50 exemplaires, en 24 heures.
 >
-> Jusqu'ici, une petite série prenait 3 à 4 jours. Avec cette machine, elle est prête en 24 heures, à partir de 50 exemplaires.
+> Avant sa mise en service, Nadia et Kevin, deux de nos opérateurs, ont suivi trois semaines de formation. C'est leur travail qui permet ces délais.
 >
-> Nadia et Kevin, deux de nos opérateurs, se sont formés pendant trois semaines pour la maîtriser : réglages, gestion des couleurs, finitions. Ce sont eux qui suivront vos commandes.
+> Le premier client à en profiter est la brasserie artisanale Les Trois Clochers, avec 300 étiquettes pour sa bière saisonnière. Merci pour votre confiance.
 >
-> Premier client à en profiter : la brasserie artisanale Les Trois Clochers, avec 300 étiquettes pour sa bière saisonnière. Un bon exemple de ce que cette presse permet : une édition limitée, en petite quantité, sans attendre.
+> À qui ça sert ? À l'association qui prépare un événement, au commerce qui teste un nouveau produit, à la brasserie qui sort une édition limitée. Bref, à tous ceux qui ont besoin d'une petite quantité sans attendre ni commander plus que nécessaire.
 >
-> Elle peut servir à une asbl qui prépare un événement, un commerce qui lance un produit ou un club qui imprime ses affiches.
+> Vous êtes une petite entreprise ou une association de Wallonie picarde ? Envoyez-nous votre projet, même modeste : [coordonnées].
 >
-> Vous êtes une petite entreprise ou une association de Wallonie picarde ? Envoyez-nous votre projet ou passez nous voir à l'atelier : [contact].
->
-> #WalloniePicarde #Imprimerie #PetitesSéries
-
-*(environ 1 400 caractères)*
+> #imprimerie #WalloniePicarde #Mouscron
 
 ## Visuel suggéré
 
-Une vraie photo de Nadia et Kevin devant la presse, en train de contrôler une planche d'étiquettes des Trois Clochers. Si possible, une deuxième photo des étiquettes posées sur les bouteilles.
+Une vraie photo de Nadia et Kevin devant la presse, si possible avec une étiquette des Trois Clochers en main. Évitez les images de banque d'images.
 
 ## Faits à vérifier avant publication
 
-- **Délai de 24 heures** : à partir de quand compte-t-il ? Validation du fichier, bon à tirer ? Est-il valable pour tous les formats et toutes les finitions ? Si ce n'est pas le cas, écrivez par exemple « en 24 heures après validation du bon à tirer ».
-- **Minimum de 50 exemplaires** : vérifiez qu'il s'applique à tous les produits (étiquettes, flyers, affiches…).
-- **Date d'installation** : 14 septembre 2026.
-- **Formation de Nadia et Kevin** : trois semaines. Le détail « réglages, gestion des couleurs, finitions » est une supposition de ma part, à confirmer ou à supprimer.
-- **La phrase entre guillemets** (« Je n'ai besoin que de quelques centaines d'exemplaires… ») résume une demande de clients. Si ce n'est pas une demande fréquente, supprimez-la.
-- **Exemples d'usage** (asbl, commerce, club) : ce sont des illustrations, pas des clients réels.
-- **Accords** : Nadia et Kevin, pour le texte et la photo. Les Trois Clochers, pour la mention. Si possible, faites-leur relire le post et identifiez la page LinkedIn de la brasserie.
-- **[contact]** : à remplacer par un e-mail, un numéro ou un lien.
+- **« 24 heures »** : à partir de quand exactement ? La commande, la validation du BAT (bon à tirer) ou la réception des fichiers ? Et le délai vaut-il pour l'impression seule ou jusqu'à la livraison ? Si besoin, ajoutez une précision, par exemple « après validation du BAT ».
+- **« 3 à 4 jours »** : c'était bien le délai habituel pour les petites séries avant la nouvelle presse ?
+- **« Dès 50 exemplaires »** : y a-t-il des limites de format, de support ou de quantité maximale à signaler ?
+- **Date** : le 14 septembre 2026 correspond à l'installation. Si la mise en service réelle a eu lieu plus tard, adaptez « Depuis le 14 septembre » dans la variante courte.
+- **Noms** : vérifiez l'orthographe de « Nadia » et « Kevin » (Kévin ?) et du nom exact de la brasserie. Identifiez la page LinkedIn des Trois Clochers pour pouvoir la mentionner avec @.
+- **Accords** : il faut l'accord écrit (un e-mail suffit) de Nadia, de Kevin et de la brasserie, pour le texte et pour la photo.
+- **« Atelier de Mouscron »** : confirmez que la presse est bien installée sur ce site.
+- **Exemples d'usage** (association, commerce, édition limitée) : ce sont des illustrations génériques. Retirez-les si elles ne correspondent pas à ce que vous proposez vraiment.
+- **[coordonnées]** : ajoutez un e-mail, un téléphone ou un lien vers une page de devis.
 
-**À expliquer au directeur :** j'ai retiré « on est les meilleurs de la région », « qualité incroyable » et « délais imbattables ». Ces formules ne sont pas prouvées et pourraient être prises pour une comparaison avec la concurrence. Les chiffres réels (24 heures au lieu de 3 à 4 jours, dès 50 exemplaires) sont plus convaincants pour une petite entreprise qui hésite. J'ai aussi réduit les hashtags à deux ou trois, ciblés sur la région.
+Si votre directeur tient à marquer l'enthousiasme, une phrase comme « Toute l'équipe est contente de pouvoir vous proposer ça » passe très bien. En revanche, je garderais au maximum trois hashtags et pas d'emojis en série.

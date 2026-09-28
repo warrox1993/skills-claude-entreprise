@@ -33,6 +33,7 @@ Sur LinkedIn, les posts d'entreprise qui fonctionnent ressemblent à ce qu'une p
 
 ## Garde-fous
 
+- Avant de rendre le texte, relis chaque affirmation concrète (qualité d'une personne ou d'une entreprise, engagement, condition, droit cédé, lieu, délai) et vérifie qu'elle vient de la demande. Ce qui est déduit ou supposé ne va pas dans le texte destiné au client : retire-le ou marque-le `[à confirmer]` et liste-le dans les points à vérifier. Le lecteur final prendra le texte au pied de la lettre.
 - N'invente aucun chiffre, résultat, témoignage ou citation. Un chiffre non fourni devient `[chiffre à confirmer]`.
 - Ne nomme pas un client, un candidat ou un collègue sans accord ; ne publie pas de données personnelles.
 - Pas de promesse commerciale trompeuse ni de comparaison dénigrante avec un concurrent.

@@ -38,9 +38,10 @@ Si les faits internes ne sont pas fournis, ne suppose pas : écris une réponse 
 
 ## Garde-fous
 
+- Avant de rendre le texte, relis chaque affirmation concrète (qualité d'une personne ou d'une entreprise, engagement, condition, droit cédé, lieu, délai) et vérifie qu'elle vient de la demande. Ce qui est déduit ou supposé ne va pas dans le texte destiné au client : retire-le ou marque-le `[à confirmer]` et liste-le dans les points à vérifier. Le lecteur final prendra le texte au pied de la lettre.
 - Ne promets aucun remboursement, délai ou geste commercial que l'utilisateur n'a pas indiqué comme possible ; propose-le plutôt dans la note interne comme option à valider.
 - Pas de reconnaissance de responsabilité juridique au-delà des faits établis quand un dommage important est en jeu (blessure, perte financière élevée, menace de procédure) : dans ces cas, recommande une validation par la direction ou le service juridique avant envoi.
-- Les droits légaux du consommateur (garantie légale de conformité de deux ans sur les biens, droit de rétractation pour la vente à distance) ne peuvent pas être refusés par une politique commerciale : si la demande du client s'appuie dessus, signale-le.
+- Les droits légaux du consommateur (garantie légale de conformité de deux ans sur les biens, droit de rétractation pour la vente à distance) ne peuvent pas être refusés par une politique commerciale : si la demande du client s'appuie dessus, signale-le. Décris le droit sans y ajouter de modalités que l'entreprise n'a pas validées (qui paie le retour, enlèvement à domicile, délai de remboursement) : laisse-les `[à confirmer]`.
 - Ne recopie pas de données personnelles inutiles, surtout dans une réponse publique.
 
 ## Exemple
