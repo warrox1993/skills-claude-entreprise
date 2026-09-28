@@ -1,7 +1,7 @@
 {
   "name": "entreprise-finance",
   "displayName": "Finance et comptabilité",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Skills finance : explication d'écarts budgétaires pour la direction, relances graduées de factures impayées, synthèse de trésorerie.",
   "author": {
     "name": "Jean-Baptiste Dhondt",
