@@ -1,7 +1,7 @@
 {
   "name": "entreprise-it",
   "displayName": "IT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skills IT : procédure de gestion d'incident, revue d'une politique de mots de passe et de MFA, documentation d'un script d'administration.",
   "author": {
     "name": "Jean-Baptiste Dhondt",

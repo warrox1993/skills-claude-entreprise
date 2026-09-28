@@ -10,49 +10,49 @@
       "name": "entreprise-rh",
       "source": "./plugins/entreprise-rh",
       "description": "Skills RH : offre d'emploi inclusive et conforme au droit belge, grille d'entretien structuré, plan d'accueil d'un nouvel arrivant.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-finance",
       "source": "./plugins/entreprise-finance",
       "description": "Skills finance : explication d'écarts budgétaires pour la direction, relances graduées de factures impayées, synthèse de trésorerie.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-commercial",
       "source": "./plugins/entreprise-commercial",
       "description": "Skills commerciaux : préparation de rendez-vous client, réponse à une objection, proposition commerciale structurée.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-marketing",
       "source": "./plugins/entreprise-marketing",
       "description": "Skills marketing : calendrier éditorial réaliste, post LinkedIn d'entreprise sobre, adaptation d'un texte en français, néerlandais et anglais.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-juridique",
       "source": "./plugins/entreprise-juridique",
       "description": "Skills juridique et conformité : première lecture d'un contrat, registre des traitements RGPD, autodiagnostic NIS2 pour la Belgique.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-support-client",
       "source": "./plugins/entreprise-support-client",
       "description": "Skills support client : réponse à une réclamation, article de base de connaissances à partir d'un ticket résolu.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-direction",
       "source": "./plugins/entreprise-direction",
       "description": "Skills direction et gestion de projet : compte rendu de réunion avec décisions et actions, note de décision, rapport d'avancement hebdomadaire.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "entreprise-it",
       "source": "./plugins/entreprise-it",
       "description": "Skills IT : procédure de gestion d'incident, revue d'une politique de mots de passe et de MFA, documentation d'un script d'administration.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ]
 }

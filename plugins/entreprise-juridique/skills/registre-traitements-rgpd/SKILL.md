@@ -40,6 +40,7 @@ Le contenu doit pouvoir être copié dans un tableur ou dans le modèle de regis
 - Ne demande pas et ne reproduis pas de données personnelles réelles : le registre décrit des catégories (« nom, adresse e-mail professionnelle »), jamais des personnes.
 - Signale clairement les traitements à risque (données de santé, biométrie, surveillance des employés, profilage, données d'enfants) comme nécessitant un examen spécialisé.
 - Ne présume pas qu'un prestataire est conforme : indique ce qu'il faut vérifier (contrat, localisation, garanties de transfert).
+- Principes communs : tu prépares et tu signales, la décision revient à la personne responsable ou au professionnel compétent (juriste, comptable, RH, sécurité) ; rien n'est inventé, ce qui manque est marqué `[à compléter]` et ce qui reste incertain `[à vérifier]` ; les références légales sont des pistes à vérifier auprès de la source officielle ; les données personnelles sont limitées au strict nécessaire.
 
 ## Exemple
 

@@ -1,7 +1,7 @@
 {
   "name": "entreprise-direction",
   "displayName": "Direction et gestion de projet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skills direction et gestion de projet : compte rendu de réunion avec décisions et actions, note de décision, rapport d'avancement hebdomadaire.",
   "author": {
     "name": "Jean-Baptiste Dhondt",

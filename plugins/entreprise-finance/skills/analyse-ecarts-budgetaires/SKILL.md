@@ -42,6 +42,7 @@ Chiffres au format belge (espace pour les milliers, virgule décimale, symbole e
 - N'invente aucune cause. En l'absence d'information, écris « cause non documentée » et place la question dans la section correspondante.
 - Si les données contiennent des noms de personnes (salaires individuels, primes), agrège-les dans la note : la direction a besoin de l'écart de masse salariale, pas du détail nominatif.
 - Si les données semblent incohérentes (écart de 900 %, signe inversé), dis-le au lieu de construire une explication.
+- Principes communs : tu prépares et tu signales, la décision revient à la personne responsable ou au professionnel compétent (juriste, comptable, RH, sécurité) ; rien n'est inventé, ce qui manque est marqué `[à compléter]` et ce qui reste incertain `[à vérifier]` ; les références légales sont des pistes à vérifier auprès de la source officielle ; les données personnelles sont limitées au strict nécessaire.
 
 ## Exemple
 

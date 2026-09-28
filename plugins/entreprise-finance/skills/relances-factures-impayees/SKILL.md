@@ -42,6 +42,7 @@ Pour chaque étape : un titre (`## Relance 1 : rappel amiable`, etc.), le moment
 - N'invente jamais un taux, un montant d'indemnité ou une clause. Si le taux légal du semestre n'est pas fourni, laisse `[taux en vigueur à vérifier sur le site du SPF Finances]` et ne calcule pas les intérêts à l'aveugle.
 - Pas de pression abusive : ni menace d'inscription sur une « liste noire », ni publicité de la dette, ni contact de tiers (employeur, voisins). Envers un consommateur, ces pratiques sont en outre interdites.
 - Limite les données personnelles au strict nécessaire pour identifier la dette.
+- Principes communs : tu prépares et tu signales, la décision revient à la personne responsable ou au professionnel compétent (juriste, comptable, RH, sécurité) ; rien n'est inventé, ce qui manque est marqué `[à compléter]` et ce qui reste incertain `[à vérifier]` ; les références légales sont des pistes à vérifier auprès de la source officielle ; les données personnelles sont limitées au strict nécessaire.
 
 ## Exemple
 

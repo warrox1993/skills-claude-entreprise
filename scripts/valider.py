@@ -9,7 +9,8 @@ Contrôles effectués :
   name identique au nom du dossier, 64 caractères au plus, minuscules, chiffres et tirets,
   sans les mots réservés « anthropic » et « claude », description non vide de 1024 caractères
   au plus, sans balise XML ;
-- sections attendues dans chaque SKILL.md (format de sortie et garde-fous) ;
+- sections attendues dans chaque SKILL.md (format de sortie et garde-fous), et principes communs
+  présents dans les garde-fous (marqueurs [à compléter] et [à vérifier]) ;
 - présence de exemples/entree.md et exemples/sortie-attendue.md ;
 - absence de tiret cadratin dans le README.
 
@@ -31,6 +32,7 @@ BALISE_XML = re.compile(r"<[^>]+>")
 MOTS_RESERVES = ("anthropic", "claude")
 CHAMPS_FRONTMATTER = {"name", "description", "license", "allowed-tools", "metadata", "compatibility"}
 SECTIONS_OBLIGATOIRES = ("## Format de sortie", "## Garde-fous")
+MARQUEURS_GARDE_FOUS = ("[à compléter]", "[à vérifier]", "Principes communs")
 
 erreurs: list[str] = []
 
@@ -104,6 +106,11 @@ def verifier_skill(dossier: Path) -> None:
     for section in SECTIONS_OBLIGATOIRES:
         if section not in corps:
             erreur(fichier, f"section « {section} » manquante")
+    if "## Garde-fous" in corps:
+        garde_fous = corps.split("## Garde-fous", 1)[1].split("\n## ", 1)[0]
+        for marqueur in MARQUEURS_GARDE_FOUS:
+            if marqueur not in garde_fous:
+                erreur(fichier, f"garde-fous : marqueur « {marqueur} » absent")
     if len(corps.splitlines()) > 500:
         erreur(fichier, "corps de plus de 500 lignes : découper en fichiers de référence")
 

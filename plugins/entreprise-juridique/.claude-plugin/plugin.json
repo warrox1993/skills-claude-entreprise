@@ -1,7 +1,7 @@
 {
   "name": "entreprise-juridique",
   "displayName": "Juridique et conformité",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skills juridique et conformité : première lecture d'un contrat, registre des traitements RGPD, autodiagnostic NIS2 pour la Belgique.",
   "author": {
     "name": "Jean-Baptiste Dhondt",
