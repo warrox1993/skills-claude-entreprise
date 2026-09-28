@@ -4,10 +4,10 @@
 
 ## Votre rôle
 
-- Vous réalisez la maintenance préventive et curative d'installations électromécaniques chez nos clients.
-- Vous diagnostiquez les pannes et remettez les équipements en service.
-- Vous vous déplacez avec une camionnette de service, surtout en province de Liège, et régulièrement chez deux clients à Tongres et à Hasselt.
-- Vous clôturez vos bons de travail dans SAP. C'est un usage simple et nous vous formons.
+- Vous réalisez la maintenance d'installations industrielles chez nos clients [nature exacte et types d'installations à confirmer].
+- Vous diagnostiquez les pannes et remettez les équipements en service [à confirmer].
+- Vous vous déplacez avec une camionnette de service, surtout en province de Liège, et chez deux clients à Tongres et à Hasselt [fréquence à préciser].
+- Vous clôturez vos bons de travail dans SAP. C'est un usage simple [formation prévue : à confirmer].
 - Une semaine par mois, vous assurez la garde pour les interventions urgentes.
 - [à compléter : équipements types, travail seul ou en binôme, à qui vous rapportez]
 
@@ -15,7 +15,7 @@
 
 - Une formation en électromécanique (bachelier) ou une expérience équivalente sur le terrain
 - Une expérience de la maintenance industrielle ([à préciser : nombre d'années réellement nécessaire])
-- Un néerlandais oral suffisant pour échanger avec les équipes techniques de nos clients limbourgeois
+- Un néerlandais oral suffisant pour échanger avec nos deux clients limbourgeois
 - Le permis B, pour conduire la camionnette de service
 - Pouvoir assurer une semaine de garde par mois
 
@@ -31,7 +31,7 @@
 - Des chèques-repas et une assurance hospitalisation
 - Une camionnette de service pour vos interventions
 - [à compléter : compensation de la garde, outillage, vêtements de travail, formations]
-- Une équipe de 40 personnes, où l'on connaît tout le monde
+- Une PME de 40 personnes
 
 ## Comment postuler
 

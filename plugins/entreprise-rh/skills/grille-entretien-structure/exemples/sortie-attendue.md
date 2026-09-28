@@ -134,7 +134,7 @@ Le candidat répond comme s'il était au téléphone.
 
 | À éviter | Formulation acceptable (à poser à **tous** les candidats) |
 |---|---|
-| « Avez-vous des enfants ? Comment faites-vous pour la garde ? » | « Pendant les pics, il y a parfois des journées plus longues en [mois]. Est-ce compatible avec vos contraintes ? » |
+| « Avez-vous des enfants ? Comment faites-vous pour la garde ? » | « Pendant les pics, en [mois], [décrire la réalité : horaires, heures supplémentaires éventuelles]. Est-ce compatible avec vos contraintes ? » |
 | « Avez-vous déjà fait un burn-out ? », ou toute question sur la santé | Question C1 sur la façon dont le candidat a géré une période chargée |
 | Projet de grossesse, situation familiale, état civil | Aucune |
 | Âge, « combien d'années avant la pension ? » | Aucune |

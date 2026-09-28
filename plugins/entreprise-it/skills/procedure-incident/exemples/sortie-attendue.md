@@ -25,7 +25,7 @@ Prochaine relecture : [date à fixer, au moins une fois par an et après chaque 
 5. **Débrancher le disque USB de sauvegarde** du serveur et le ranger dans une enveloppe, à part. **Ne le rebrancher sur aucun ordinateur.**
 6. **Faire le tour des autres ordinateurs.** Si l'un présente les mêmes signes, appliquer les étapes 1 à 3. Pour les autres, débrancher le câble réseau par précaution et ne plus s'en servir.
 7. **Téléphoner au Dr Maes** (numéro sur la fiche contacts). Sans réponse après 10 minutes, appeler [suppléant·e].
-8. **Téléphoner à la ligne d'urgence de l'assurance cyber** (numéro sur la fiche contacts). Elle est normalement joignable le week-end. Donner le numéro de la police d'assurance.
+8. **Téléphoner à la ligne d'urgence de l'assurance cyber** (numéro sur la fiche contacts). Vérifier sur la fiche contacts si elle est joignable le week-end [à vérifier]. Donner le numéro de la police d'assurance.
 9. **Commencer le journal d'incident** (modèle en fin de document) : noter l'heure de chaque action.
 
 **À NE PAS FAIRE**
@@ -130,7 +130,7 @@ Ne parler ni de « piratage » ni de « vol de données » tant que ce n'est pas
 
 | Heure | Action | Par qui | Observation |
 |---|---|---|---|
-| 08:42 | Message de rançon constaté sur le PC de l'accueil | [prénom] | Photo prise |
+| *Exemple :* 08:42 | Message de rançon constaté sur le PC de l'accueil | [prénom] | Photo prise |
 | | | | |
 | | | | |
 | | | | |

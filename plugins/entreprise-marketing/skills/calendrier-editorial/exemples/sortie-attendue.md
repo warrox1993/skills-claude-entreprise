@@ -33,8 +33,8 @@ Légende : **AC** = assistante communication (rédaction), **Arch.** = architect
 | 2 | 10/11/2026 | Newsletter | Soirée + Conseils | Invitation à la soirée, lien vers le guide sur l'isolation par l'intérieur, mention de l'offre d'emploi | E-mail | S'inscrire à la soirée | AC / Arch. | À faire |
 | 2 | 12/11/2026 | Facebook | Conseils | « Rénover par étapes ou tout en une fois : ce qui change pour votre budget et votre confort » | Post texte + visuel | S'inscrire à la soirée | AC / Arch. | À faire |
 | 3 | 17/11/2026 | Facebook | Preuves | Témoignage 1 : « [Prénom], [commune] : pourquoi nous avons choisi une rénovation complète » [témoignage à obtenir] | Citation + photos du chantier | Demander un rendez-vous | AC / Arch. | À faire |
-| 3 | 18/11/2026 | LinkedIn | Recrutement | « Une semaine type chez nous : relevés, audit PEB, suivi de chantier, réunions avec les familles » | Post + 3 photos d'équipe | Postuler | AC / associé·e | À faire |
-| 3 | 20/11/2026 | Facebook | Soirée | « Primes : les 3 questions qu'on nous pose chaque semaine. Réponses le 26/11 » | Repartage de l'événement + texte court | S'inscrire | AC | À faire |
+| 3 | 18/11/2026 | LinkedIn | Recrutement | « Une semaine type chez nous : [activités réelles à confirmer, par ex. relevés, suivi de chantier, réunions avec les familles] » | Post + 3 photos d'équipe | Postuler | AC / associé·e | À faire |
+| 3 | 20/11/2026 | Facebook | Soirée | « Primes : les 3 questions qu'on nous pose le plus souvent [à confirmer]. Réponses le 26/11 » | Repartage de l'événement + texte court | S'inscrire | AC | À faire |
 | 4 | 23/11/2026 | Facebook + LinkedIn | Soirée | Dernier rappel : « Jeudi, soirée d'info sur les primes dans nos bureaux » | Repartage de l'événement | S'inscrire | AC | À faire |
 | 4 | 26/11/2026 | Facebook | Soirée | Photos de la soirée en direct (intervenants et salle, sans visages de participants sauf accord) | Story ou post photos | Montrer que c'est concret et accessible | AC | À faire |
 | 4 | 27/11/2026 | E-mail aux participants | Soirée | Merci, présentation en PDF, guide sur l'isolation, lien pour prendre rendez-vous | E-mail | Prendre un premier rendez-vous | AC / Arch. | À faire |
@@ -47,7 +47,7 @@ Légende : **AC** = assistante communication (rédaction), **Arch.** = architect
 | 7 | 17/12/2026 | Facebook | Conseils | « Isolation par l'intérieur : quand c'est une bonne idée, et quand l'éviter » | Post + lien vers le guide PDF | Télécharger le guide | AC / Arch. | À faire |
 | 7 | 18/12/2026 | Facebook | Preuves | Avant/après n°3 : « [Maison, commune] : [travaux réalisés] » | Carrousel photos | Demander un rendez-vous | AC / Arch. du chantier | À faire |
 | 8 | 21/12/2026 | Facebook | Preuves | Témoignage 3 : « Premier hiver dans une maison rénovée : ce qui a changé pour [Prénom] » [témoignage à obtenir] | Citation + photos | Réserver un rendez-vous en janvier | AC / Arch. | À faire |
-| 8 | 22/12/2026 | Facebook + LinkedIn | Coulisses | « Fermé du 24/12 au 03/01 : on vous répond dès le lundi 04/01/2027 » | Post court + photo d'équipe | Laisser sa demande via le formulaire | AC | À faire |
+| 8 | 22/12/2026 | Facebook + LinkedIn | Coulisses | « Fermé du 24/12 au 03/01 : on vous répond dès le lundi 04/01/2027 » | Post court + photo d'équipe | Laisser sa demande via [formulaire de contact ou e-mail, à confirmer] | AC | À faire |
 
 **Heures estimées par semaine :**
 
@@ -81,7 +81,7 @@ Nombre de téléchargements du guide et de nouveaux abonnés à la newsletter : 
 
 ## Points de réalisme
 
-- **Recrutement « d'ici janvier ».** Vous pouvez raisonnablement avoir choisi quelqu'un avant le 23/12, mais l'arrivée dépendra du préavis de la personne. Si elle est salariée ailleurs, elle ne démarrera peut-être pas avant février ou mars (à vérifier au cas par cas). Votre page LinkedIn aura sans doute une portée limitée. Publiez donc aussi l'offre sur votre site et sur Le Forem, et appuyez-vous sur le réseau des anciens des facultés d'architecture. Le plus efficace reste que les 14 collègues repartagent l'offre.
+- **Recrutement « d'ici janvier ».** Vous pouvez raisonnablement avoir choisi quelqu'un avant le 23/12, mais l'arrivée dépendra du préavis de la personne. Si elle est salariée ailleurs, elle ne démarrera peut-être pas avant février ou mars (à vérifier au cas par cas). Votre page LinkedIn aura sans doute une portée limitée. Publiez donc aussi l'offre sur votre site (si vous en avez un) et sur Le Forem, et appuyez-vous sur le réseau des anciens des facultés d'architecture. Le plus efficace reste que les 14 collègues repartagent l'offre.
 - **Primes.** N'annoncez aucun montant ou condition sans validation d'un architecte à la date de publication. Indiquez la date de mise à jour dans le post.
 
 ## À préparer dès maintenant (octobre)

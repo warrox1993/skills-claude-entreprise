@@ -26,9 +26,9 @@ Nous vous proposons une boutique en ligne complète, que vous gérez vous-mêmes
 
 1. **Récupérer votre nom de domaine et votre contenu.** Nous faisons les démarches pour reprendre la gestion de votre nom de domaine. Nous transférons ensuite ce qui doit l'être depuis l'ancien site. Votre adresse web reste la même.
 2. **Photographier vos fromages.** Une photographe professionnelle, qui travaille pour nous en sous-traitance, réalise une séance photo de vos produits.
-3. **Construire la boutique.** Nous installons une boutique WooCommerce avec un thème adapté à votre image, lisible sur smartphone. Nous créons les 40 fiches produits avec vos textes et les nouvelles photos.
+3. **Construire la boutique.** Nous installons une boutique WooCommerce avec un thème adapté à votre image [affichage sur smartphone : à confirmer]. Nous créons les 40 fiches produits avec vos textes et les nouvelles photos.
 4. **Brancher le paiement et la livraison.** Le paiement passe par Mollie (Bancontact et carte). Un module de créneaux de livraison permet à vos clients de choisir quand recevoir leur colis.
-5. **Vous rendre autonomes.** Deux séances de formation de 2 heures vous apprennent à modifier les prix, les stocks et les produits, et à suivre vos commandes.
+5. **Vous rendre autonomes.** Deux séances de formation de 2 heures vous apprennent à modifier vous-mêmes les prix et les stocks [programme détaillé à confirmer].
 
 Après la mise en ligne, nous hébergeons la boutique et en assurons la maintenance pour un forfait mensuel.
 
@@ -96,7 +96,7 @@ Le découpage ci-dessous est donné à titre indicatif.
 - Solde de 60 % : [à compléter : échéance et modalités]
 - Hébergement et maintenance : [à compléter : facturation mensuelle ou annuelle]
 - Offre valable jusqu'au [à compléter]
-- Nos conditions générales, jointes, s'appliquent.
+- Nos conditions générales [à joindre, à confirmer] s'appliquent.
 
 ## Hypothèses
 

@@ -18,7 +18,7 @@
 | 6 | Newsletter mensuelle | Membres (et ex-membres ?) | Soft opt-in clients / intérêt légitime, avec opt-out | Haute |
 | 7 | Gestion du personnel et paie | Salariés, ex-salariés, ayants droit | Contrat de travail + obligations légales | Haute |
 | 8 | Planning du personnel | Salariés | Contrat de travail (6.1.b) | Basse |
-| 9 | Stages enfants (inscription + fiche médicale) | Enfants, parents, personnes autorisées à reprendre l'enfant | Contrat + art. 9 à déterminer | **Très haute** (enfants + santé) |
+| 9 | Stages enfants (inscription + fiche médicale) | Enfants, parents [personnes autorisées à reprendre l'enfant : à confirmer] | Contrat + art. 9 à déterminer | **Très haute** (enfants + santé) |
 | 10 | Photos : stages et événements, Instagram | Membres, enfants, participants | Consentement (6.1.a) + droit à l'image | Haute |
 | 11 | Site web WordPress (formulaires, cookies) | Visiteurs du site, candidats membres | Selon l'usage (voir la fiche) | Moyenne |
 
@@ -53,7 +53,7 @@
 | Contrat art. 28 | Idem fiche 1 si la décharge est signée en ligne |
 | Transferts hors EEE | Idem fiche 1 |
 | Conservation | Décharge : **[durée à confirmer avec votre assureur ou avocat]** selon les délais de prescription en responsabilité. Pour les mineurs, la prescription peut être suspendue jusqu'à leur majorité. Détail médical : ne pas le conserver au-delà du nécessaire, idéalement ne pas le collecter du tout. |
-| Sécurité | Accès restreint à la direction, pas de visibilité au comptoir |
+| Sécurité | À mettre en place [proposition] : accès restreint à la direction, pas de visibilité au comptoir |
 | Vigilance | **Examen spécialisé recommandé** : données de santé, de mineurs, et validité juridique de la décharge. Documentez s'il faut ou non une AIPD. |
 
 ### 3. Abonnements, facturation, domiciliation
@@ -76,7 +76,7 @@
 
 | Rubrique | Contenu |
 |---|---|
-| Finalités | Réserver l'accès aux membres en ordre d'abonnement ; sécurité (savoir qui est présent) ; statistiques de fréquentation |
+| Finalités | Réserver l'accès aux membres en ordre d'abonnement ; sécurité (savoir qui est présent) ; [statistiques de fréquentation : à confirmer] |
 | Personnes concernées | Membres ; **salariés s'ils badgent aussi** |
 | Données | N° de badge lié au membre, date et heure de passage, statut d'accès (autorisé ou refusé) |
 | Source | Le système de badge |
@@ -85,7 +85,7 @@
 | Contrat art. 28 | Fournisseur du système de badge ou logiciel de gestion s'il est intégré |
 | Transferts hors EEE | À vérifier |
 | Conservation | Historique nominatif : **[proposition : 3 mois]**. Statistiques : anonymisées ou agrégées, sans limite. |
-| Sécurité | Accès restreint aux historiques |
+| Sécurité | À mettre en place [proposition] : accès restreint aux historiques |
 | Vigilance | L'historique ne doit pas servir à surveiller les membres ni les salariés à d'autres fins. S'il sert au temps de travail du personnel, cela devient un traitement RH à informer et à encadrer. Vérifier que le système n'est **pas biométrique** (empreinte, visage). |
 
 ### 5. Vidéosurveillance (accueil + parking)
@@ -101,14 +101,14 @@
 | Contrat art. 28 | Installateur ou mainteneur ; fournisseur cloud si les images sont stockées en ligne |
 | Transferts hors EEE | À vérifier si enregistreur ou application cloud (fabricants hors UE fréquents) |
 | Conservation | **1 mois maximum** (loi caméras), sauf si les images servent de preuve d'une infraction, d'un dommage ou pour identifier un auteur |
-| Sécurité | Enregistreur sous clé, mot de passe changé par rapport à celui d'usine, accès limité à 1 ou 2 personnes, journal des consultations |
+| Sécurité | À mettre en place si les images sont enregistrées (voir question 4) [proposition] : enregistreur sous clé, mot de passe changé par rapport à celui d'usine, accès limité à 1 ou 2 personnes, journal des consultations |
 | Vigilance | **Examen spécialisé recommandé.** Obligations de la loi caméras à vérifier : déclaration à la police (declarationcamera.be) et validation annuelle ; pictogramme réglementaire ; registre spécifique des traitements d'images ; qualification de chaque lieu (voir question 3). CCT 68 : information préalable des salariés ; la caméra ne doit pas viser le poste de travail en continu. |
 
 ### 6. Newsletter mensuelle (Mailchimp)
 
 | Rubrique | Contenu |
 |---|---|
-| Finalités | Informer les membres (actualités, événements, offres de la salle) |
+| Finalités | Informer les membres (actualités, événements [contenu promotionnel éventuel à confirmer, voir question 6]) |
 | Personnes concernées | Membres ; ex-membres ? |
 | Données | Nom, e-mail, statistiques d'ouverture et de clic (pixels de suivi) |
 | Source | Fichier membres |
@@ -117,7 +117,7 @@
 | Contrat art. 28 | Accepter ou archiver le DPA de Mailchimp |
 | Transferts hors EEE | **Oui, États-Unis.** Vérifier la certification d'Intuit au Data Privacy Framework UE–États-Unis ; à défaut, clauses contractuelles types. Le mentionner dans la politique de confidentialité. |
 | Conservation | Jusqu'à la désinscription. Ex-membres : **[proposition : 2 ans après la fin de l'affiliation, puis suppression]**. |
-| Sécurité | Double authentification sur le compte Mailchimp, pas d'export inutile |
+| Sécurité | À mettre en place [proposition] : double authentification sur le compte Mailchimp, pas d'export inutile |
 | Vigilance | Aujourd'hui, tous les membres sont inscrits d'office : vérifiez que l'opposition leur a bien été proposée. Les pixels de suivi sont à mentionner dans l'information. |
 
 ### 7. Gestion du personnel et paie
@@ -125,7 +125,7 @@
 | Rubrique | Contenu |
 |---|---|
 | Finalités | Contrats, Dimona, paie, déclarations sociales et fiscales, absences, assurance accidents du travail |
-| Personnes concernées | Salariés, ex-salariés, étudiants jobistes, ayants droit (situation familiale pour le précompte) |
+| Personnes concernées | Salariés, ex-salariés, [étudiants jobistes éventuels, à confirmer], ayants droit (situation familiale pour le précompte) |
 | Données | Identité, n° de registre national, coordonnées, IBAN, rémunération, situation familiale, **certificats médicaux (santé, art. 9)**, éventuels accidents du travail |
 | Source | Le salarié ; le secrétariat social ; les organismes sociaux |
 | Base légale proposée | Contrat de travail (6.1.b) ; obligations légales sociales et fiscales (6.1.c) ; art. 9.2.b (droit du travail) pour les certificats médicaux. **Pas le consentement.** |
@@ -133,7 +133,7 @@
 | Contrat art. 28 | Avec le secrétariat social. Son rôle (sous-traitant ou responsable distinct pour certaines missions légales) est à clarifier dans votre contrat. |
 | Transferts hors EEE | En principe non, à vérifier auprès du secrétariat social |
 | Conservation | Documents sociaux : **5 ans** ; pièces fiscales et comptables : **jusqu'à 10 ans**. **[À confirmer avec le secrétariat social.]** Dossier personnel : fin du contrat + délai de prescription **[à confirmer]**. |
-| Sécurité | Dossiers papier sous clé ; accès réservé à la direction |
+| Sécurité | À mettre en place [proposition] : dossiers papier sous clé ; accès réservé à la direction |
 | Vigilance | Certificats médicaux : ne conserver que le strict nécessaire |
 
 ### 8. Planning du personnel (Google Sheets)
@@ -149,15 +149,15 @@
 | Contrat art. 28 | Assuré si Google Workspace avec avenant de traitement accepté. **Pas de DPA avec un compte Gmail personnel.** |
 | Transferts hors EEE | Oui, possiblement vers les États-Unis (Google est certifié Data Privacy Framework, à vérifier) |
 | Conservation | **[Proposition : 1 an]** ; au-delà, les données utiles à la paie sont chez le secrétariat social. Vérifiez vos obligations sur les horaires (règlement de travail, horaires variables) **[à confirmer]**. |
-| Sécurité | Partage nominatif, pas de lien public, double authentification |
+| Sécurité | À mettre en place [proposition] : partage nominatif, pas de lien public, double authentification |
 | Vigilance | N'y indiquez pas le motif des absences (« malade », etc.) |
 
 ### 9. Stages enfants
 
 | Rubrique | Contenu |
 |---|---|
-| Finalités | Inscrire l'enfant, assurer sa sécurité, réagir en cas de problème médical, remettre l'enfant aux personnes autorisées |
-| Personnes concernées | Enfants, parents, personnes autorisées à venir chercher l'enfant, médecin traitant |
+| Finalités | Inscrire l'enfant, assurer sa sécurité, réagir en cas de problème médical [remise de l'enfant aux personnes autorisées : à confirmer] |
+| Personnes concernées | Enfants, parents [personnes autorisées à venir chercher l'enfant, médecin traitant : selon le contenu réel de la fiche, à confirmer] |
 | Données | Identité et âge de l'enfant, coordonnées des parents, **fiche médicale : allergies, traitements, pathologies (art. 9)**, autorisation photo, paiement |
 | Source | Parents |
 | Base légale proposée | Contrat (6.1.b) pour l'inscription. Fiche médicale : **consentement explicite du parent (9.2.a)**, avec 9.2.c (intérêts vitaux) en situation d'urgence. **À valider par un conseiller.** |
@@ -165,23 +165,23 @@
 | Contrat art. 28 | Selon l'outil d'inscription (formulaire, logiciel de gestion ?) |
 | Transferts hors EEE | À vérifier selon l'outil |
 | Conservation | Fiche médicale : **destruction à la fin du stage + [proposition : 1 mois]**, sauf incident. Inscription et paiement : comme les fiches 1 et 3. |
-| Sécurité | Fiches papier dans une farde fermée, sous la responsabilité du moniteur principal ; pas d'envoi via WhatsApp personnel |
+| Sécurité | À mettre en place (voir question 8) [proposition] : fiches papier dans une farde fermée, sous la responsabilité du moniteur principal ; pas d'envoi via WhatsApp personnel |
 | Vigilance | **Examen spécialisé recommandé** : données de santé d'enfants. Moniteurs externes ou étudiants : prévoir un engagement de confidentialité. |
 
 ### 10. Photos (stages, événements, Instagram)
 
 | Rubrique | Contenu |
 |---|---|
-| Finalités | Communication de la salle : Instagram, site web, supports promotionnels |
+| Finalités | Communication de la salle : Instagram [autres supports éventuels à confirmer] |
 | Personnes concernées | Membres, participants aux événements, **enfants des stages** |
-| Données | Images identifiables, parfois des prénoms en légende |
-| Source | Photos prises par le personnel |
+| Données | Images identifiables [prénoms en légende ? à confirmer] |
+| Source | [Auteur des photos à confirmer : personnel, bénévoles, participants ?] |
 | Base légale proposée | **Consentement (6.1.a)**, qui répond aussi au droit à l'image. Pour les enfants : consentement du parent, **distinct par usage** (usage interne / site / réseaux sociaux). Pour les photos de foule d'événements : information claire sur place et possibilité de refuser. |
 | Destinataires | Public ; Meta (Instagram). Meta est responsable de sa plateforme, et vous êtes en **responsabilité conjointe** avec Meta pour les statistiques de la page (jurisprudence de la CJUE sur les pages Facebook). |
 | Contrat art. 28 | Sans objet pour Meta (conditions « Page Insights Controller Addendum ») |
 | Transferts hors EEE | Oui, par nature (publication publique, Meta aux États-Unis) |
 | Conservation | Jusqu'au retrait du consentement. Archives internes : **[proposition : tri annuel]**. |
-| Sécurité | Photos sur un stockage de l'entreprise, pas sur les téléphones personnels |
+| Sécurité | À mettre en place [proposition] : photos sur un stockage de l'entreprise, pas sur les téléphones personnels |
 | Vigilance | Retrait du consentement = retirer le post. **Prudence renforcée pour les enfants sur Instagram** : privilégier des photos non identifiables (de dos, de loin). |
 
 ### 11. Site web WordPress
@@ -197,7 +197,7 @@
 | Contrat art. 28 | Hébergeur, outils d'analyse |
 | Transferts hors EEE | Oui si Google Analytics, pixel Meta, reCAPTCHA ou Google Fonts chargé à distance |
 | Conservation | Journaux : **[proposition : 6 mois]** ; cookies : **[durée à confirmer]** |
-| Sécurité | Mises à jour, sauvegardes, comptes administrateurs protégés |
+| Sécurité | À mettre en place [proposition] : mises à jour, sauvegardes, comptes administrateurs protégés |
 | Vigilance | Politique de confidentialité et politique cookies à publier |
 
 ## Questions ouvertes
@@ -224,9 +224,9 @@
 | Séparer les autorisations photo par usage et fixer une règle pour les enfants sur Instagram | Consentement spécifique requis, retrait possible | 2 |
 | Collecter et archiver les contrats de sous-traitance (art. 28) : logiciel de gestion, hébergeur web, Mailchimp, Google, secrétariat social, installateur des caméras, système de badge | Obligation du responsable du traitement | 2 |
 | Documenter les transferts vers les États-Unis (Mailchimp, Google, Meta, outils du site) : certification Data Privacy Framework ou clauses contractuelles types | Transferts hors EEE à justifier | 2 |
-| Rédiger ou mettre à jour la politique de confidentialité (site + formulaire) et l'information du personnel | Art. 13, aujourd'hui inexistante d'après votre description | 2 |
+| Rédiger ou mettre à jour la politique de confidentialité (site + formulaire) et l'information du personnel | Art. 13 ; existence et contenu actuels à vérifier | 2 |
 | Ajouter l'opposition à la newsletter dans le formulaire d'inscription et vérifier le lien de désinscription | Condition du soft opt-in | 2 |
-| Fixer et appliquer les durées de conservation (purge annuelle des ex-membres, historiques de badge, soumissions WordPress) | Minimisation ; la plupart des durées sont aujourd'hui indéfinies | 3 |
+| Fixer et appliquer les durées de conservation (purge annuelle des ex-membres, historiques de badge, soumissions WordPress) | Minimisation ; durées actuelles non communiquées [à vérifier] | 3 |
 | Documenter pourquoi un DPO et une AIPD ne sont pas nécessaires (ou le sont), notamment pour la vidéo, la santé et les enfants | Responsabilité (art. 5.2) | 3 |
 | Mettre en place une procédure simple pour les demandes d'accès et d'effacement et pour les violations de données (notification à l'APD sous 72 h) | Obligations des art. 15-22 et 33 | 3 |
 | Mesures de sécurité de base : double authentification sur tous les outils, comptes nominatifs, mises à jour de WordPress | Réduit le risque de fuite | 3 |

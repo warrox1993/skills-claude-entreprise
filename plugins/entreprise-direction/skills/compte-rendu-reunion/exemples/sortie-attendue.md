@@ -19,7 +19,7 @@
 
 | N° | Action | Responsable | Échéance | Statut |
 |---|---|---|---|---|
-| 1 | Organiser une réunion d'information pour le personnel sur les trajets vers Seraing (demande des délégués syndicaux) | Luc | Avant le 15 octobre 2026 | À faire |
+| 1 | Organiser une réunion d'information pour le personnel sur les trajets vers Seraing (demande des délégués syndicaux) | Luc | Avant la mi-octobre 2026 | À faire |
 | 2 | Demander à la commune de Seraing des places de parking supplémentaires | Pierre | [échéance à fixer] | En cours |
 | 3 | Envoyer à tout le personnel la procédure de coupure des serveurs (vendredi 13 novembre à 18h) | Samia | [échéance à fixer] | À faire |
 | 4 | Présenter les deux devis de câblage au CFO pour décision | [à attribuer] | [échéance à fixer] | À faire |
@@ -29,7 +29,7 @@
 ## Points ouverts
 
 - **Câblage réseau** : deux devis sont sur la table, 18 400 € et 23 900 €. Samia préfère le second parce que sa garantie est meilleure, mais il dépasse le budget IT de 5 000 €. Ce choix dépend d'un arbitrage budgétaire qui sort du cadre du comité, c'est au CFO de répondre. Attention au calendrier : le câblage doit être posé avant le 14 novembre.
-- **Parking** : il manque 22 places. Pierre attend la réponse de la commune.
+- **Parking** : il manque 22 places. Pierre voit avec la commune pour obtenir des places supplémentaires.
 - **Étude vélo** : Anne l'a demandée mais personne ne s'est proposé.
 
 ## Informations à retenir
@@ -51,7 +51,7 @@
 > Vous trouverez ci-dessous le compte rendu du comité de ce matin. Les points principaux :
 >
 > - **Le déménagement est confirmé pour le week-end du 14-15 novembre.**
-> - Luc organise d'ici le 15 octobre une réunion d'information pour le personnel sur les trajets.
+> - Luc organise d'ici la mi-octobre une réunion d'information pour le personnel sur les trajets.
 > - Pierre voit avec la commune pour obtenir des places de parking supplémentaires.
 > - Samia enverra la procédure de coupure des serveurs, prévue le vendredi 13 novembre à 18h.
 >

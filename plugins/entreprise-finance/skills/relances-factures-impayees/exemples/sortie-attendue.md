@@ -45,7 +45,7 @@ Notez ce qui est dit, la date et le nom de l'interlocuteur. Envoyez la relance 2
 > Nous vous remercions de procéder au règlement de **11 495,00 €** au plus tard le **mercredi 7 octobre 2026**, sur le compte [IBAN] ([BIC]), en mentionnant les numéros de facture en communication.
 >
 > Pour rappel, l'article 7 de nos conditions générales prévoit qu'à défaut de paiement à l'échéance :
-> - des intérêts de retard sont dus de plein droit et sans mise en demeure, au taux prévu par la loi du 2 août 2002 concernant la lutte contre le retard de paiement dans les transactions commerciales ;
+> - des intérêts de retard sont dus au taux prévu par la loi du 2 août 2002 concernant la lutte contre le retard de paiement dans les transactions commerciales ;
 > - une indemnité forfaitaire de 10 % du montant impayé, avec un minimum de 125 €, est due.
 >
 > Nous n'avons pas appliqué ces montants à ce stade, compte tenu de notre collaboration depuis 2019. Sans règlement ou nouvelle de votre part d'ici le 7 octobre, nous serons toutefois contraints de vous adresser une mise en demeure qui les inclura.
@@ -88,7 +88,7 @@ Notez ce qui est dit, la date et le nom de l'interlocuteur. Envoyez la relance 2
 >
 > Malgré nos rappels du 20 août 2026 et du 29 septembre 2026, restés sans suite, les factures ci-dessous demeurent impayées. Elles portent sur des prestations achevées et réceptionnées, et n'ont fait l'objet d'aucune contestation.
 >
-> Conformément à l'article 7 de nos conditions générales, que vous avez acceptées, et à la loi du 2 août 2002 concernant la lutte contre le retard de paiement dans les transactions commerciales, vous nous êtes redevables des montants suivants :
+> Conformément à l'article 7 de nos conditions générales et à la loi du 2 août 2002 concernant la lutte contre le retard de paiement dans les transactions commerciales, vous nous êtes redevables des montants suivants :
 >
 > | Facture | Principal | Intérêts de retard | Indemnité forfaitaire (10 %, min. 125 €) |
 > |---|---|---|---|

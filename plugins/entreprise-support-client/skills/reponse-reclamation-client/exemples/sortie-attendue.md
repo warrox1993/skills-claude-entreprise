@@ -4,7 +4,7 @@
 
 Madame Lemaire,
 
-Merci d'avoir pris le temps de nous écrire. Vous avez raison sur tous les points, et je comprends votre colère.
+Merci d'avoir pris le temps de nous écrire. Vous avez raison sur le retard, l'installation et les rappels, et je comprends votre colère.
 
 Voici ce que nous avons vérifié :
 
@@ -15,8 +15,8 @@ Voici ce que nous avons vérifié :
 Voici ce que je vous propose :
 
 1. **Le remboursement des 49 € d'installation**, sur votre moyen de paiement d'origine, sous [délai].
-2. **Une installation gratuite à domicile**, à la date qui vous convient. Je peux vous proposer le [date 1] ou le [date 2], ou un autre jour de votre choix. Cette fois, vous recevrez une confirmation écrite et un appel la veille.
-3. **Un bon d'achat de 30 €**, valable sur tout notre site.
+2. **Une installation gratuite à domicile**, à la date qui vous convient. Je peux vous proposer le [date 1] ou le [date 2], ou un autre jour de votre choix. Cette fois, vous recevrez une confirmation écrite [et un appel la veille : à confirmer avec le transporteur].
+3. **Un bon d'achat de 30 €** [conditions d'utilisation à préciser].
 
 **Pour la rayure sur le hublot**, pourriez-vous m'envoyer une ou deux photos en répondant à ce message ? Dès réception, je vous proposerai soit l'échange de l'appareil, soit un geste adapté. Je vous répondrai sous [délai].
 

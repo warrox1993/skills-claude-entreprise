@@ -4,7 +4,7 @@
 
 ## Décision demandée
 
-Faut-il remplacer les 45 camionnettes diesel dont le leasing se termine entre janvier et juin 2027 par 37 camionnettes électriques et 8 diesel (option mixte), avec 20 bornes au dépôt de Namur pour 64 000 € ? Le comité de direction décide le 8 octobre 2026. Il faut décider à cette date à cause des délais de commande et d'installation des bornes.
+Faut-il remplacer les 45 camionnettes diesel dont le leasing se termine entre janvier et juin 2027 par 37 camionnettes électriques et 8 diesel (option mixte), avec 20 bornes au dépôt de Namur pour 64 000 € ? Le comité de direction décide le 8 octobre 2026. Il faut décider à cette date pour que les véhicules soient disponibles à l'échéance des leasings [délais de commande et d'installation des bornes à confirmer].
 
 ## Contexte
 
@@ -55,7 +55,7 @@ Faut-il remplacer les 45 camionnettes diesel dont le leasing se termine entre ja
 | A | La zone de basses émissions interdit les diesels neufs avant 2031 | Inconnue | Élevé : on ne peut plus aller chez les clients bruxellois | Obtenir le calendrier officiel avant de décider |
 | A | Perte de points dans les appels d'offres qui comptent le CO2 | Moyenne | Moyen à élevé | Aucune avec cette option |
 | B, C | L'autonomie réelle, avec le véhicule chargé de pièces et d'outils, est plus faible que les 220 km annoncés | Moyenne | Élevé | Tester en conditions réelles et s'appuyer sur les kilométrages réels par technicien |
-| B, C | Un véhicule n'est pas rechargé quand un technicien d'astreinte est appelé la nuit après une longue journée, par exemple pour une personne bloquée dans un ascenseur | Faible à moyenne | Très élevé : sécurité et image | Règle de recharge pour les astreintes et liste de bornes rapides |
+| B, C | S'il existe des astreintes de nuit [à confirmer], un véhicule peut ne pas être rechargé quand un technicien d'astreinte est appelé après une longue journée, par exemple pour une personne bloquée dans un ascenseur | Faible à moyenne | Très élevé : sécurité et image | Règle de recharge pour les astreintes et liste de bornes rapides |
 | B, C | L'installation des bornes prend du retard (raccordement au réseau, puissance disponible au dépôt) | Moyenne | Moyen | Commander dès la décision et prolonger temporairement quelques leasings si besoin |
 | B, C | La recharge à domicile coûte plus que prévu (installation des bornes chez les techniciens, règles de remboursement) | Moyenne | Faible à moyen | Demander des devis et fixer une règle de remboursement claire |
 | C | Les 8 diesel ruraux sont bloqués jusqu'en 2031 | Moyenne | Faible | Négocier un leasing plus court pour ces 8 véhicules |
@@ -98,7 +98,7 @@ La recommandation changerait dans les cas suivants :
 Votre préférence pour le mix tient la route, mais l'argument n'est pas celui qu'on attendrait :
 
 - **Pas d'argument financier.** Avec vos chiffres, un diesel et un électrique coûtent exactement la même chose sur 48 mois : 43 200 € par véhicule. Le mix coûte donc 64 000 € de plus que le diesel, à cause des bornes. Le comité doit savoir qu'il paie une assurance et non qu'il fait une économie. Sinon, la première facture d'électricité plus élevée que prévu décrédibilisera la décision.
-- **Deux risques qu'on n'avait pas soulevés.** Le coût des bornes au domicile des techniciens n'est pas compté. Les astreintes de nuit, avec un véhicule pas rechargé après une longue journée, posent un vrai problème dans votre métier.
+- **Deux risques qu'on n'avait pas soulevés.** Le coût des bornes au domicile des techniciens n'est pas compté. Si vous assurez des astreintes de nuit [à confirmer], un véhicule pas rechargé après une longue journée poserait un vrai problème dans votre métier.
 - **Une information à obtenir avant le 8 octobre.** La date d'interdiction des diesels neufs dans la zone de basses émissions de Bruxelles peut à elle seule faire pencher la décision.
 
 Les estimations de CO2 ne sont qu'un ordre de grandeur, tiré de vos budgets carburant et électricité. Il faudra les faire recalculer selon la méthode demandée par vos clients.

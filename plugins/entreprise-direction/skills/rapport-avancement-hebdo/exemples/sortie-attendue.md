@@ -17,7 +17,7 @@
 ## Ce que nous attendons de vous
 
 1. **Valider l'avenant de 6 000 €** pour le développement de la TVA multi-taux. Le travail est estimé à 4 jours. Pour tenir la connexion ERP au 02/10, il faut lancer la correction au plus tard le mardi 29/09. Chaque jour de retard dans la décision décale d'autant la connexion ERP et le pilote. Merci de préciser aussi si ce montant est pris sur les 85 000 € ou s'il s'y ajoute.
-2. **Prendre connaissance du sujet Peppol**, qui touche à la conformité (voir « Risques et blocages »). Nous vous proposerons des options la semaine prochaine.
+2. **Prendre connaissance du sujet Peppol**, qui touche à la conformité (voir « Risques et blocages »). Nous pouvons vous proposer des options la semaine prochaine [engagement à confirmer].
 
 ## Avancement par rapport au plan
 
@@ -36,7 +36,7 @@
 - Fournisseurs pilotes choisis : Bureau Plus, Métallerie Ardennaise, Transport Loriot.
 - Formation des 4 comptables planifiée le 01/10, salle réservée.
 
-## Prévu la semaine prochaine
+## Prévu la semaine prochaine (proposition à valider)
 
 - Dès la validation de l'avenant, lancer la correction multi-taux chez l'intégrateur. Responsable : [à compléter]
 - Relancer Transport Loriot et choisir un fournisseur de remplacement s'il n'a pas répondu d'ici [date à fixer]. Responsable : [à compléter]

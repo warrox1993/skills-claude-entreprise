@@ -42,7 +42,7 @@
 | 9h30 | Remise du laptop, du badge et des accès. Première connexion et activation du MFA | Responsable IT |
 | 10h30 | Volet RH : documents restants, règlement de travail, politique de télétravail, congés, notes de frais | RH |
 | 11h15 | Visite des locaux et accueil sécurité (sorties de secours, premiers secours, personne de confiance, conseiller en prévention) | RH ou office manager |
-| 12h00 | Déjeuner avec l'équipe produit (offert) | Équipe |
+| 12h00 | Déjeuner avec l'équipe produit [prise en charge à confirmer] | Équipe |
 | 13h30 | Présentation du produit : à quoi il sert, pour qui, les grandes briques techniques | Thomas |
 | 14h30 | Installation de l'environnement local en binôme, en suivant le guide setup | Parrain |
 | 16h30 | Point de fin de journée : ce qui fonctionne, ce qui bloque | Thomas |
@@ -53,7 +53,7 @@ L'objectif du jour 1 : Sarah repart avec un poste qui fonctionne, le projet qui 
 
 ## Semaine 1 (sur site)
 
-- **Mardi 3 :** première participation au daily de l'équipe. Présentation de l'architecture back-end (services, base de données, CI/CD GitLab). Prise en main du premier ticket en binôme avec le parrain.
+- **Mardi 3 :** première participation aux rituels de l'équipe [daily ou autre, à confirmer]. Présentation de l'architecture back-end (services, base de données, CI/CD GitLab). Prise en main du premier ticket en binôme avec le parrain.
 - **Mercredi 4 :** travail sur le premier ticket. Présentation des conventions : workflow Git, merge requests, revue de code, tests, Definition of Done. Rencontre de 30 minutes avec le Product Owner ou Product Manager [à compléter].
 - **Jeudi 5 :** première merge request ouverte et revue par le parrain. Tour de la préprod : comment on y déploie, où lire les logs. Courte rencontre avec les interlocuteurs clés hors équipe (support, ops ou infra, QA) [rôles à compléter].
 - **Vendredi 6 :** si possible, fusion du premier ticket. Point de fin de semaine avec Thomas (45 min). On fait le bilan de ce qui manque et on prépare le télétravail : matériel pour la maison, VPN testé depuis chez elle, disponibilités sur Slack.
@@ -68,7 +68,7 @@ L'objectif du jour 1 : Sarah repart avec un poste qui fonctionne, le projet qui 
 |---|---|---|
 | **30 jours** (≈ 2 déc.) | Elle installe et fait tourner l'environnement complet sans aide | Elle a mis à jour elle-même le guide setup si besoin |
 | | 3 à 5 tickets de petite taille livrés en préprod | Tickets Jira clôturés, MR fusionnées |
-| | Elle connaît le workflow de l'équipe (daily, sprint, revue, déploiement) | Elle a participé à une cérémonie de sprint complète |
+| | Elle connaît le workflow de l'équipe [rituels réels à préciser : daily, sprint, revue, déploiement ?] | Elle a participé à un cycle complet de l'équipe [sprint ou équivalent, à confirmer] |
 | **60 jours** (≈ 8 janv. 2027, pause de fin d'année comprise) | Elle livre une user story de taille moyenne de bout en bout, avec les tests | Story livrée en préprod, peu d'allers-retours en revue |
 | | Elle fait des revues de code utiles pour les autres | Au moins 5 revues avec commentaires constructifs |
 | **90 jours** (≈ 1er févr. 2027) | Elle est autonome sur un périmètre fonctionnel défini [à compléter] | Elle estime et découpe les stories de ce périmètre en planning |
@@ -125,7 +125,7 @@ Le rôle du parrain : être disponible pour les questions, surtout les « petite
 > - Rendez-vous à **9h00** au [adresse, étage, accès]. Je t'attendrai à l'accueil.
 > - Parking / transports : [à compléter]
 > - Pense à apporter ta carte d'identité et [documents demandés par RH, à compléter].
-> - Le déjeuner est prévu avec l'équipe, c'est nous qui invitons.
+> - Le déjeuner est prévu avec l'équipe [prise en charge à confirmer avant envoi].
 >
 > **Ta première semaine** se passe entièrement sur site. Ce sera plus simple pour rencontrer tout le monde et bien démarrer. Le télétravail (2 jours par semaine) commence ensuite.
 >

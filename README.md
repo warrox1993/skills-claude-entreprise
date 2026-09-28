@@ -53,7 +53,7 @@ IT (`entreprise-it`)
 - `revue-politique-mots-de-passe-mfa` : compare une politique de mots de passe aux recommandations actuelles et la réécrit.
 - `documentation-script` : documente un script d'administration pour qu'un collègue puisse le reprendre, secrets retirés.
 
-Chaque skill contient un dossier `exemples/` avec une demande fictive réaliste (`entree.md`) et la réponse que Claude a réellement produite avec le skill lors du test (`sortie-attendue.md`, seule la typographie a été harmonisée).
+Chaque skill contient un dossier `exemples/` avec une demande fictive réaliste (`entree.md`) et la réponse que Claude a réellement produite avec le skill lors du test (`sortie-attendue.md`). Ces réponses ont ensuite été relues ligne à ligne : tout fait absent de la demande a été retiré ou marqué `[à confirmer]`, pour que l'exemple ne contienne rien d'inventé.
 
 ## Installation
 
