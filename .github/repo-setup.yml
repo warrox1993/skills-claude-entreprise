@@ -1,0 +1,93 @@
+# repo-setup.yml — configuration GitHub attendue par les skills du kit Tagout (Philippe Matray).
+#
+# Lu par `tagout:setup-repo` (`repo-setup.sh plan` montre l'écart, `apply` le résorbe) de
+# préférence au manifeste livré avec le kit, pour que la taxonomie de ce dépôt survive aux mises
+# à jour du kit. Règles : additif (un label absent d'ici est gardé), aucun formulaire écrasé,
+# `--prune` jamais par défaut.
+#
+# Les noms des axes type / priority / effort sont ceux du kit, gardés tels quels : les skills
+# (`create-issue`, `auto-dev`) les appliquent mot pour mot, et `auto-dev` classe l'effort dans
+# l'ORDRE de déclaration ci-dessous (du plus petit au plus grand).
+
+labels:
+  # ------------------------------------------------------------------ type
+  - name: "bug"
+    color: "d73a4a"
+    description: "Something isn't working"
+  - name: "enhancement"
+    color: "a2eeef"
+    description: "New feature or request"
+  - name: "documentation"
+    color: "0075ca"
+    description: "Improvements or additions to documentation"
+
+  # -------------------------------------------------------------- priority
+  - name: "priority: high"
+    color: "b60205"
+    description: "À traiter avant les autres niveaux"
+  - name: "priority: medium"
+    color: "d93f0b"
+    description: "Niveau par défaut : utile, pas urgent"
+  - name: "priority: low"
+    color: "fbca04"
+    description: "Quand la file est vide par ailleurs"
+
+  # ---------------------------------------------------------------- effort (du plus petit au plus grand)
+  - name: "effort: small"
+    color: "c2e0c6"
+    description: "Une tâche, un cycle de test"
+  - name: "effort: medium"
+    color: "bfd4f2"
+    description: "Quelques tâches dans une seule couche"
+  - name: "effort: large"
+    color: "5319e7"
+    description: "Plusieurs couches ou par étapes : plusieurs commits"
+
+  # ------------------------------------------------------------------ area (une par zone du code ;
+  # c'est l'axe qu'`auto-dev` lit pour donner à chaque agent une zone qui ne chevauche pas les autres)
+  - name: "area: commercial"
+    color: "c5def5"
+    description: "Plugin entreprise-commercial"
+  - name: "area: direction"
+    color: "c5def5"
+    description: "Plugin entreprise-direction"
+  - name: "area: finance"
+    color: "c5def5"
+    description: "Plugin entreprise-finance"
+  - name: "area: it"
+    color: "c5def5"
+    description: "Plugin entreprise-it"
+  - name: "area: juridique"
+    color: "c5def5"
+    description: "Plugin entreprise-juridique"
+  - name: "area: marketing"
+    color: "c5def5"
+    description: "Plugin entreprise-marketing"
+  - name: "area: rh"
+    color: "c5def5"
+    description: "Plugin entreprise-rh"
+  - name: "area: support-client"
+    color: "c5def5"
+    description: "Plugin entreprise-support-client"
+  - name: "area: outillage"
+    color: "c5def5"
+    description: "Scripts de validation et d'empaquetage, marketplace, CI"
+
+# Labels que `--prune` ne supprime jamais : ils appartiennent à un outil.
+pruneKeep:
+  - "autorelease: *"
+  - "dependencies"
+
+issueTemplates:
+  - feature_request.yml
+  - bug_report.yml
+
+settings:
+  # Supprime la branche distante après fusion (sinon chaque fusion faite depuis une worktree du
+  # kit laisse traîner la branche, voir tagout#185).
+  delete_branch_on_merge: true
+  # Aucun historique de PR ici (commits directs sur main) : on prend le réglage du kit, fusion
+  # « squash » seule, historique linéaire. Réversible dans les réglages du dépôt.
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: false

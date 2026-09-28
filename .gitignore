@@ -1,3 +1,8 @@
 dist/
 __pycache__/
 *.pyc
+
+# Worktrees des agents (kit Tagout et superpowers) : un dépôt imbriqué commité par
+# un `git add -A` casserait les clones (gitlink vers un commit introuvable).
+.claude/worktrees/
+.worktrees/
