@@ -1,0 +1,22 @@
+{
+  "name": "entreprise-it",
+  "displayName": "IT",
+  "version": "1.0.0",
+  "description": "Skills IT : procédure de gestion d'incident, revue d'une politique de mots de passe et de MFA, documentation d'un script d'administration.",
+  "author": {
+    "name": "Jean-Baptiste Dhondt",
+    "url": "https://github.com/warrox1993"
+  },
+  "homepage": "https://github.com/warrox1993/skills-claude-entreprise",
+  "repository": "https://github.com/warrox1993/skills-claude-entreprise",
+  "license": "MIT",
+  "keywords": [
+    "entreprise",
+    "belgique",
+    "francais",
+    "it",
+    "securite",
+    "incident",
+    "documentation"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "entreprise-juridique",
+  "displayName": "Juridique et conformité",
+  "version": "1.0.0",
+  "description": "Skills juridique et conformité : première lecture d'un contrat, registre des traitements RGPD, autodiagnostic NIS2 pour la Belgique.",
+  "author": {
+    "name": "Jean-Baptiste Dhondt",
+    "url": "https://github.com/warrox1993"
+  },
+  "homepage": "https://github.com/warrox1993/skills-claude-entreprise",
+  "repository": "https://github.com/warrox1993/skills-claude-entreprise",
+  "license": "MIT",
+  "keywords": [
+    "entreprise",
+    "belgique",
+    "francais",
+    "juridique",
+    "rgpd",
+    "nis2",
+    "conformite"
+  ]
+}

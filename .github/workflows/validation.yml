@@ -1,0 +1,41 @@
+name: Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Installer Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Installer PyYAML
+        run: python -m pip install "pyyaml==6.0.3"
+
+      - name: Valider les skills, plugins et la marketplace (script du dépôt)
+        run: python scripts/valider.py
+
+      - name: Valider avec l'outil officiel de Claude Code
+        run: |
+          npx --yes @anthropic-ai/claude-code@2.1.283 plugin validate --strict .
+          for plugin in plugins/*/; do
+            npx --yes @anthropic-ai/claude-code@2.1.283 plugin validate --strict "$plugin"
+          done
+
+      - name: Vérifier que les archives Claude.ai se construisent
+        run: python scripts/empaqueter.py dist

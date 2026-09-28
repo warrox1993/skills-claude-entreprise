@@ -1,0 +1,22 @@
+{
+  "name": "entreprise-finance",
+  "displayName": "Finance et comptabilité",
+  "version": "1.0.0",
+  "description": "Skills finance : explication d'écarts budgétaires pour la direction, relances graduées de factures impayées, synthèse de trésorerie.",
+  "author": {
+    "name": "Jean-Baptiste Dhondt",
+    "url": "https://github.com/warrox1993"
+  },
+  "homepage": "https://github.com/warrox1993/skills-claude-entreprise",
+  "repository": "https://github.com/warrox1993/skills-claude-entreprise",
+  "license": "MIT",
+  "keywords": [
+    "entreprise",
+    "belgique",
+    "francais",
+    "finance",
+    "comptabilite",
+    "tresorerie",
+    "recouvrement"
+  ]
+}

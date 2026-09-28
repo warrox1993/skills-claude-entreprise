@@ -1,0 +1,22 @@
+{
+  "name": "entreprise-rh",
+  "displayName": "Ressources humaines",
+  "version": "1.0.0",
+  "description": "Skills RH : offre d'emploi inclusive et conforme au droit belge, grille d'entretien structuré, plan d'accueil d'un nouvel arrivant.",
+  "author": {
+    "name": "Jean-Baptiste Dhondt",
+    "url": "https://github.com/warrox1993"
+  },
+  "homepage": "https://github.com/warrox1993/skills-claude-entreprise",
+  "repository": "https://github.com/warrox1993/skills-claude-entreprise",
+  "license": "MIT",
+  "keywords": [
+    "entreprise",
+    "belgique",
+    "francais",
+    "rh",
+    "recrutement",
+    "onboarding",
+    "antidiscrimination"
+  ]
+}

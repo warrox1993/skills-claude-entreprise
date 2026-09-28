@@ -1,0 +1,22 @@
+{
+  "name": "entreprise-commercial",
+  "displayName": "Commercial",
+  "version": "1.0.0",
+  "description": "Skills commerciaux : préparation de rendez-vous client, réponse à une objection, proposition commerciale structurée.",
+  "author": {
+    "name": "Jean-Baptiste Dhondt",
+    "url": "https://github.com/warrox1993"
+  },
+  "homepage": "https://github.com/warrox1993/skills-claude-entreprise",
+  "repository": "https://github.com/warrox1993/skills-claude-entreprise",
+  "license": "MIT",
+  "keywords": [
+    "entreprise",
+    "belgique",
+    "francais",
+    "vente",
+    "commercial",
+    "proposition",
+    "objections"
+  ]
+}
