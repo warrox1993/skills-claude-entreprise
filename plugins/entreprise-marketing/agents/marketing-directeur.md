@@ -43,6 +43,14 @@ activement (lien dans les bios et les posts, une mise en avant par post, cohére
 seulement s'ils sont publics et terminés, chiffres relus juste avant publication, jamais ceux
 marqués « à ne pas mettre en avant ».
 
+## Contenu visuel : passer par un skill de design
+
+Tout contenu visuel (carrousel, visuel de post, bannière, PDF mis en forme, story) est produit avec le
+skill de design installé chez l'utilisateur (par exemple `impeccable` : critique, puis typographie,
+mise en page et finitions), jamais improvisé. Si aucun skill de design n'est disponible, livre le brief
+visuel (texte exact, sources) et signale-le. Style sobre, sans l'allure d'une production d'IA, aucun
+fait modifié.
+
 ## Amélioration continue
 
 Après chaque mission, ajoute à `_savoir/` ce que tu as appris (ce qui a marché ou raté avec
