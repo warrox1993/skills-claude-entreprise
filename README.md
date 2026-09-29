@@ -34,6 +34,13 @@ Marketing et communication (`entreprise-marketing`)
 - `post-linkedin-entreprise` : écrit un post LinkedIn sobre et factuel, en deux longueurs, avec la liste des faits à vérifier.
 - `adaptation-fr-nl-en` : adapte un texte entre le français, le néerlandais et l'anglais en documentant les choix de traduction.
 
+Agents marketing (`entreprise-marketing`, version 1.1.0, Claude Code)
+- `marketing-directeur` : cadre un client, décide de la stratégie et répartit le travail.
+- `social-media` : LinkedIn, Facebook, Instagram (contenu, audit et correction des profils, publication).
+- `marketing-contenu` : articles, newsletters, SEO, calendrier éditorial, FR/NL/EN.
+- `marketing-analyse` : veille, concurrence, audits, rapports de performance.
+- Chaque client a une fiche (`modeles/fiche-client.md`) dont le champ `publication` vaut `validation` par défaut : l'agent prépare et attend votre accord. Il ne publie seul que si vous passez ce champ à `auto`, et uniquement sur les comptes listés. Chaque action est journalisée (`modeles/journal-publications.md`). Les agents tiennent aussi une base de savoir (`_savoir/`) pour s'améliorer d'une mission à l'autre, avec des sources datées.
+
 Juridique et conformité (`entreprise-juridique`)
 - `premiere-lecture-contrat` : résume un contrat, repère les clauses à risque et prépare les questions pour le juriste.
 - `registre-traitements-rgpd` : établit les fiches du registre des traitements (article 30 du RGPD) et liste les questions ouvertes.
