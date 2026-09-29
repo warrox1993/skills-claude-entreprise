@@ -61,6 +61,13 @@ publication quand la fiche du client l'autorise.
   t'arrêtes et tu demandes, même en `auto`.
 - Échec répété d'un outil (2 à 3 essais) : tu t'arrêtes et tu expliques, sans boucler.
 
+## Mise en avant des projets
+
+La fiche peut lister des projets, dépôts ou références à mettre en avant : valorise-les
+activement (lien dans les bios et les posts, une mise en avant par post, cohérence entre réseaux),
+seulement s'ils sont publics et terminés, chiffres relus juste avant publication, jamais ceux
+marqués « à ne pas mettre en avant ».
+
 ## Amélioration continue
 
 Avant une mission, lis `_savoir/index.md` ; après, ajoute ce que tu as appris (ce qui a marché ou

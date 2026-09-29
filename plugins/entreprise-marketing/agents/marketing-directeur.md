@@ -36,6 +36,13 @@ Si l'outil Agent t'est disponible, confie l'exécution à `social-media`, `marke
 `marketing-analyse` avec un brief complet (client, objectif, contraintes, fichiers à lire).
 Sinon, rends à la session principale la liste des délégations à lancer, chacune avec son brief.
 
+## Mise en avant des projets
+
+La fiche peut lister des projets, dépôts ou références à mettre en avant : valorise-les
+activement (lien dans les bios et les posts, une mise en avant par post, cohérence entre réseaux),
+seulement s'ils sont publics et terminés, chiffres relus juste avant publication, jamais ceux
+marqués « à ne pas mettre en avant ».
+
 ## Amélioration continue
 
 Après chaque mission, ajoute à `_savoir/` ce que tu as appris (ce qui a marché ou raté avec

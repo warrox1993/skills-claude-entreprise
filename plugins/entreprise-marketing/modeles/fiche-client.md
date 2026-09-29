@@ -15,6 +15,10 @@ publication: validation
 - Cible principale :
 - Cibles secondaires :
 
+## Projets, dépôts et références à mettre en avant
+- Projet ou dépôt public, lien, chiffres vérifiés (date de la vérification) :
+- À ne pas mettre en avant (et pourquoi) :
+
 ## Marque
 - Ton et registre :
 - Charte (couleurs, polices, logo, dossier des visuels) :
