@@ -1,8 +1,8 @@
 {
   "name": "entreprise-marketing",
   "displayName": "Marketing et communication",
-  "version": "1.0.2",
-  "description": "Skills marketing : calendrier éditorial réaliste, post LinkedIn d'entreprise sobre, adaptation d'un texte en français, néerlandais et anglais.",
+  "version": "1.1.0",
+  "description": "Skills et agents marketing : calendrier éditorial réaliste, post LinkedIn d'entreprise sobre, adaptation FR/NL/EN, et quatre agents (directeur marketing, réseaux sociaux, contenu, analyse) avec fiche client et garde-fou de publication.",
   "author": {
     "name": "Jean-Baptiste Dhondt",
     "url": "https://github.com/warrox1993"

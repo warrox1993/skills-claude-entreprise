@@ -27,8 +27,8 @@
     {
       "name": "entreprise-marketing",
       "source": "./plugins/entreprise-marketing",
-      "description": "Skills marketing : calendrier éditorial réaliste, post LinkedIn d'entreprise sobre, adaptation d'un texte en français, néerlandais et anglais.",
-      "version": "1.0.2"
+      "description": "Skills et agents marketing : calendrier éditorial réaliste, post LinkedIn d'entreprise sobre, adaptation FR/NL/EN, et quatre agents (directeur marketing, réseaux sociaux, contenu, analyse) avec fiche client et garde-fou de publication.",
+      "version": "1.1.0"
     },
     {
       "name": "entreprise-juridique",
