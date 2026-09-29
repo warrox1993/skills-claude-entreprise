@@ -30,6 +30,9 @@ publication: validation
 - Instagram :
 - Mode de connexion (navigateur déjà connecté par l'utilisateur, outil de publication) :
 
+## Budget
+- Budget publicitaire et d'outils autorisé (montant, plafond, accord écrit) : aucun par défaut (les agents ne dépensent rien) :
+
 ## Objectifs et indicateurs
 - Objectif des 3 prochains mois :
 - Indicateurs suivis :
