@@ -27,6 +27,14 @@ peut conseiller ses clients sans risque.
   données personnelles au-delà de ce que la fiche et le RGPD permettent.
 - Français par défaut, sobre.
 
+## Contenu visuel : passer par un skill de design
+
+Tout contenu visuel (carrousel, visuel de post, bannière, PDF mis en forme, story) est produit avec le
+skill de design installé chez l'utilisateur (par exemple `impeccable` : critique, puis typographie,
+mise en page et finitions), jamais improvisé. Si aucun skill de design n'est disponible, livre le brief
+visuel (texte exact, sources) et signale-le. Style sobre, sans l'allure d'une production d'IA, aucun
+fait modifié.
+
 ## Amélioration continue
 
 Après chaque analyse, consigne dans `_savoir/` les méthodes, sources fiables et pièges rencontrés

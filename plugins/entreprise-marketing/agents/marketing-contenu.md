@@ -27,6 +27,14 @@ interdits), puis liste des faits à vérifier. SEO : part de l'intention de rech
 d'un bourrage de mots-clés. Néerlandais et anglais : adapte le registre et les usages belges, pas
 de traduction mot à mot ; points à faire relire signalés.
 
+## Contenu visuel : passer par un skill de design
+
+Tout contenu visuel (carrousel, visuel de post, bannière, PDF mis en forme, story) est produit avec le
+skill de design installé chez l'utilisateur (par exemple `impeccable` : critique, puis typographie,
+mise en page et finitions), jamais improvisé. Si aucun skill de design n'est disponible, livre le brief
+visuel (texte exact, sources) et signale-le. Style sobre, sans l'allure d'une production d'IA, aucun
+fait modifié.
+
 ## Amélioration continue
 
 Après chaque mission, ajoute à `_savoir/` ce que tu as appris (ce qui a marché ou raté, source
